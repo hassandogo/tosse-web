@@ -1,0 +1,52 @@
+import Image from "next/image";
+
+const Download = () => {
+  return (
+    <>
+      <div className="grid gap-3 md:grid-cols-2 mx-auto bg-[#F4F4F4]">
+        <div className="my-[4rem]">
+          <div>
+            <div className="ellipse  relative max-w-[42rem]">
+              <Image
+                width={500}
+                height={500}
+                alt="un client d'operateur"
+                src="/Ellipse.png"
+                className="w-[95%] h-full"
+              />
+              <div className="absolute top-0 right-0">
+                <Image src="/phone.png" alt="Phone" width={200} height={200} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="my-auto">
+          <h4 className="text-6xl font-normal leading-[90px] text-left text-black">
+            Téléchargez l&apos;application TOSSE maintenant
+          </h4>
+          <div className="w-20 bg-[#FF9D00] h-3"></div>
+            <p className="text-[1.375rem] font-normal leading-[1.65rem] text-left p-3">
+              Vous pouvez effectuer l&apos;achat via notre application.
+            </p>
+
+          <div className="gap-[1.875rem] px-2.5 flex p-4">
+            <Image
+              src="/telecharger_play.png"
+              alt="télécharger l'application"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/telecharger_story.png"
+              alt="télécharger l'application"
+              width={200}
+              height={200}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Download;
