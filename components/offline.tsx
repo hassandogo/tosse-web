@@ -20,7 +20,7 @@ const Offline = () => {
         </p>
         <div className="w-[100%] text-xl font-normal leading-[3.1rem] text-center p-5">
           <div className="flex justify-center gap-5 p-3 items-center">
-            <a href="#/" target="_blank" className="flex items-center gap-3">
+            <a href="#/" target="_blank" className="flex items-center gap-2">
               <Download />
               <p>
                 Moov Africa:
@@ -29,7 +29,7 @@ const Offline = () => {
             </a>
           </div>
           <div className="flex justify-center gap-5 items-center">
-            <a href="#/" target="_blank" className="flex items-center gap-3">
+            <a href="#/" target="_blank" className="flex items-center gap-2">
               <Download />
               <p>
                 Airtel: <span className="text-[#EB1C24]"> +235 66462428</span>
