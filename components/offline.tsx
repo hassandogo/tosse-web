@@ -20,16 +20,21 @@ const Offline = () => {
         </p>
         <div className="w-[100%] text-xl font-normal leading-[3.1rem] text-center p-5">
           <div className="flex justify-center gap-5 p-3 items-center">
-            <Download />
-            <p>
-              Moov Africa: <span className="text-[#396BB4]">+235 99161030</span>
-            </p>
+            <a href="#/" target="_blank" className="flex items-center gap-3">
+              <Download />
+              <p>
+                Moov Africa:
+                <span className="text-[#396BB4]"> +235 99161030</span>
+              </p>
+            </a>
           </div>
           <div className="flex justify-center gap-5 items-center">
-            <Download />
-            <p>
-              Airtel: <span className="text-[#EB1C24]">+235 66462428</span>
-            </p>
+            <a href="#/" target="_blank" className="flex items-center gap-3">
+              <Download />
+              <p>
+                Airtel: <span className="text-[#EB1C24]"> +235 66462428</span>
+              </p>
+            </a>
           </div>
         </div>
         <p className="text-xl font-normal leading-6 text-center text-[#FF9D00] flex justify-center gap-3">
