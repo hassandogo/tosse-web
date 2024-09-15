@@ -3,7 +3,7 @@ import Image from "next/image";
 const HomeAvailability = () => {
   return (
     <>
-      <div className="gap-2 bg-[#F7F7F7] pt-5">
+      <div className="gap-2 bg-[#F7F7F7] pt-5" id="availability">
         <div className="p-2">
           <h4 className="text-6xl font-normal leading-[55px] text-center text-black relative mb-[2rem]">
             Crédit disponible
