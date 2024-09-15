@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FC } from "react";
 import { AppContainer } from "@/components/global/appContainer";
+import clsx from "clsx";
 
 export type HeaderProps = {
   transparentBg?: boolean;
@@ -12,13 +13,13 @@ export type HeaderProps = {
 
 const NavBar = () => {
   const tabs = [
-    { id: "1", label: "Comment ça fonctionne", href: "/" },
-    { id: "2", label: "Credit disponible", href: "/" },
+    { id: "1", label: "Comment ça fonctionne", href: "/#functioning" },
+    { id: "2", label: "Credit disponible", href: "/#availability" },
     { id: "3", label: "Forfaits", href: "/" },
     { id: "4", label: "Contact", href: "/" },
   ];
   return (
-    <nav className="lg:col-start-2 lg:col-span-5 hidden lg:flex gap-4 lg:gap-6 lg:justify-end">
+    <nav className="lg:col-start-2 lg:col-span-5 hidden lg:flex gap-4 lg:gap-6 lg:justify-end lg:items-center">
       {tabs.length > 0 &&
         tabs.map((tab) => (
           <Link
@@ -42,9 +43,10 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
   return (
     // <header className="min-h-24 shadow-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-4 p-4">
     <header
-      className={cn(
+      className={clsx(
         "py-3 lg:py-5",
         "transition-all duration-300",
+        "shadow-sm",
         transparentBg ? "bg-black/0" : "bg-white/95"
       )}
     >

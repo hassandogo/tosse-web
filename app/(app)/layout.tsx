@@ -1,15 +1,14 @@
-import Footer from "@/components/global/Footer";
-
+import Footer from "@/components/global/footer";
 
 export default function AppLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<>
-			{children}
+  return (
+    <>
+      {children}
       <Footer />
-		</>
-	);
+    </>
+  );
 }
