@@ -1,20 +1,19 @@
-import Header from "@/components/global/Header";
-import Hero from "@/components/hero/hero";
-import HomeAvailability from "@/components/home/HomeAvailability";
-import HomeDownload from "@/components/home/HomeDownload";
-import HomeFunctioning from "@/components/home/HomeFunctioning";
-import HomeOffline from "@/components/home/HomeOffline";
-
+import HomeAvailability from "@/components/home/homeAvailability";
+import { HomeBanner } from "@/components/home/homeBanner";
+import HomeDownload from "@/components/home/homeDownload";
+import HomeFunctioning from "@/components/home/homeFunctioning";
+import HomeOffline from "@/components/home/homeOffline";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <HomeFunctioning />
-      <HomeOffline />
-      <HomeDownload />
-      <HomeAvailability />
-    </div>
+    <>
+      <HomeBanner />
+      <main>
+        <HomeFunctioning />
+        <HomeOffline />
+        <HomeDownload />
+        <HomeAvailability />
+      </main>
+    </>
   );
 }
