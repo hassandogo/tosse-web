@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { CreditCard, MessageSquare, Smile } from "lucide-react";
 
-const Functioning = () => {
+const HomeFunctioning = () => {
   return (
     <>
       <div className="gap-2 bg--[#F7F7F7] m-[3rem]">
@@ -57,4 +57,4 @@ const Functioning = () => {
     </>
   );
 };
-export default Functioning;
+export default HomeFunctioning;

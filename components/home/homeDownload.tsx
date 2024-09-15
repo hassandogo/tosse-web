@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Download = () => {
+const HomeDownload = () => {
   return (
     <>
       <div className="grid gap-3 md:grid-cols-2 mx-auto bg-[#F4F4F4]">
@@ -53,4 +53,4 @@ const Download = () => {
   );
 };
 
-export default Download;
+export default HomeDownload;
