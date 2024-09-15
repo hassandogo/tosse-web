@@ -47,14 +47,14 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
         "py-3 lg:py-5",
         "transition-all duration-300",
         "shadow-sm",
-        transparentBg ? "bg-black/0" : "bg-white/95"
+        transparentBg ? "bg-black/0 text-white" : "bg-white/95"
       )}
     >
       <AppContainer className='flex justify-between items-center'>
         <Button variant={"ghost"} size={"icon"} className="lg:hidden">
           <Menu className="h-8 w-8" />
         </Button>
-        <Link href={"/"} className="text-center text-5xl uppercase">
+        <Link href={"/"} className="text-center text-3xl font-semibold uppercase">
           Tosse
         </Link>
         <NavBar />
