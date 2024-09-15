@@ -1,6 +1,6 @@
 import { Download, Save } from "lucide-react";
 
-const Offline = () => {
+const HomeOffline = () => {
   return (
     <>
       <div className="bg-[#303030] text-white items-center justify-center p-10 gap-10">
@@ -42,4 +42,4 @@ const Offline = () => {
   );
 };
 
-export default Offline;
+export default HomeOffline;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Availability = () => {
+const HomeAvailability = () => {
   return (
     <>
       <div className="gap-2 bg-[#F7F7F7] pt-5">
@@ -25,4 +25,4 @@ const Availability = () => {
     </>
   );
 };
-export default Availability;
+export default HomeAvailability;
