@@ -34,7 +34,7 @@ const NavBar = () => {
         <Globe className="mr-2" />
         Arabe
       </Button>
-      <Button className="bg-[#ff9d00] drop-shadow-sm">Acheter du crédit</Button>
+      <Button className="bg-primary drop-shadow-sm">Acheter du crédit</Button>
     </nav>
   );
 };
@@ -58,7 +58,7 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
           Tosse
         </Link>
         <NavBar />
-        <div className="hidden sm:inline-block lg:hidden text-[#ff9d00] cursor-pointer">
+        <div className="hidden sm:inline-block lg:hidden text-primary cursor-pointer">
           <DownloadIcon className="h-8 w-8 inline-block" />
           &nbsp;<span>L&apos;application</span>
         </div>

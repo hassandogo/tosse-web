@@ -1,8 +1,10 @@
 import { Download, Save } from "lucide-react";
+import { Spacer } from "../global/spacer";
 
 const HomeOffline = () => {
   return (
-    <div className="bg-[#303030] text-white items-center justify-center p-10 gap-10" id="offline">
+    <div className="bg-[#303030] text-primary-foreground items-center justify-center p-10 gap-10" id="offline">
+      <Spacer small />
       <h2 className="text-6xl font-normal leading-[4.5rem] text-center">
         Acheter du crédit hors ligne
       </h2>
@@ -31,16 +33,17 @@ const HomeOffline = () => {
           <a href="#/" target="_blank" className="flex items-center gap-2">
             <Download />
             <p>
-              Airtel: <span className="text-[#EB1C24]"> +235 66462428</span>
+              Airtel: <span className="text-destructive"> +235 66462428</span>
             </p>
           </a>
         </div>
       </div>
-      <p className="text-xl font-normal leading-6 text-center text-[#FF9D00] flex justify-center sm:gap-3">
-        <Save className=" border-[#FF9D00] w-8 h-8" />
+      <p className="text-xl font-normal leading-6 text-center text-primary flex justify-center sm:gap-3">
+        <Save className=" border-primary w-8 h-8" />
         Cliquez sur les numéros ci-dessus pour les enregistrer dans vos
         contacts
       </p>
+      <Spacer small />
     </div>
   );
 };
