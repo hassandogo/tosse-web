@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import { TypographyP } from "@/components/ui/typographies";
 const Faqs = () => {
   return (
     <section>
@@ -51,12 +52,12 @@ const Faqs = () => {
             ))}
         </div>
         <Spacer tooSmall />
-        <p className="text-[1.5rem] font-normal leading-[2rem] text-center">
+        <TypographyP className="text-[1.5rem] font-normal leading-[2rem] text-center">
           Vous avez une autre question?{" "}
           <Link href="/#" className="text-primary">
             Contactez-nous
           </Link>{" "}
-        </p>
+        </TypographyP>
         <Spacer tooSmall />
       </AppContainer>
     </section>
