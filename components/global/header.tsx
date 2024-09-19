@@ -15,7 +15,7 @@ const NavBar = () => {
   const tabs = [
     { id: "1", label: "Comment ça fonctionne", href: "/#functioning" },
     { id: "2", label: "Credit disponible", href: "/#availability" },
-    { id: "3", label: "Forfaits", href: "/" },
+    { id: "3", label: "Forfaits", href: "/forfaits" },
     { id: "4", label: "Contact", href: "/" },
   ];
   return (
