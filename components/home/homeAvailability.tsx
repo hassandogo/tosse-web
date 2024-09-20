@@ -15,10 +15,10 @@ const HomeAvailability = () => {
         <Spacer small />
         <div className="justify-center gap-5  grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           <div className="flex flex-col gap-3 justify-center items-center pb-2">
-            <Image src="/logo_moov_africa.png" alt="logo de l'opérateur Moove Africa" width={300} height={50} />
+            <Image src="/logos/logo_moov_africa.png" alt="logo de l'opérateur Moove Africa" width={300} height={50} />
           </div>
           <div className="flex flex-col gap-3 items-center">
-            <Image src="/logo_airtel.jpg" alt="logo de l'opérateur Airtel" width={300} height={50} />
+            <Image src="/logos/logo_airtel.jpg" alt="logo de l'opérateur Airtel" width={300} height={50} />
           </div>
           <div className="flex flex-col gap-3 items-center">
             <Image src="/logos/logo_salam-removebg.png" alt="logo de l'opérateur Salam" width={420} height={50} />

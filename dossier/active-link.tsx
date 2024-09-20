@@ -18,7 +18,7 @@ interface Props {
   }, [pathname, href]);
 
   return (
-    <Link href={href} className={clsx(isActive && "text-primary")}>
+    <Link href={href} className={clsx(isActive && "text-primary font-medium")}>
       {children}
     </Link>
   );

@@ -9,6 +9,7 @@ import {
   TypographyH4,
   TypographyP,
 } from "@/components/ui/typographies";
+import Header from "@/components/global/header";
 import clsx from "clsx";
 import Image from "next/image";
 import * as React from "react";
@@ -91,6 +92,7 @@ const Forfaits = () => {
 
   return (
     <section id="forfait">
+      <Header />
       <AppContainer>
         <Spacer small />
         <TypographyH1 className="font-bold">
