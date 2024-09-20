@@ -8,7 +8,6 @@ import Link from "next/link";
 const Confidentiality = () => {
   return (
     <section>
-      <Header />
       <Spacer small />
       <AppContainer>
         <div className="space-4">
@@ -318,6 +317,7 @@ const Confidentiality = () => {
         </div>
         <Spacer tooSmall />
       </AppContainer>
+      <Spacer tooSmall />
     </section>
   );
 };

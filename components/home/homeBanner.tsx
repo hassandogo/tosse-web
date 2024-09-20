@@ -4,6 +4,7 @@ import { AppContainer } from "../global/appContainer";
 import { Spacer } from "../global/spacer";
 import Header from "../global/header";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const HomeBanner: FC = () => {
   return (
@@ -26,7 +27,9 @@ export const HomeBanner: FC = () => {
         <Spacer small />
 		<div className="mx-auto xl:mx-0 max-w-3xl">
 		<Button className="drop-shadow-sm mr-4 md:text-xl">Acheter du crédit</Button>
+    <Link href="/forfaits">
 		<Button variant={'link'} className="drop-shadow-sm text-primary-foreground md:text-xl">Forfaits</Button>
+    </Link>
 		</div>
 		<Spacer large />
       </AppContainer>

@@ -15,11 +15,11 @@ const HomeDownload = () => {
                 width={500}
                 height={500}
                 alt="un client d'operateur"
-                src="/Ellipse.png"
+                src="/images/dowload_user.png"
                 className="w-[95%] h-full"
               />
               <div className="absolute top-0 right-0">
-                <Image src="/phone.png" alt="Phone" width={200} height={200} />
+                <Image src="/images/phone.png" alt="Phone" width={200} height={200} />
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ const HomeDownload = () => {
           <div className="gap-[1.875rem] px-2.5 flex p-4 items-center justify-center md:justify-start">
             <Link href="#/" target="_blank">
               <Image
-                src="/telecharger_play.png"
+                src="/images/telecharger_play.png"
                 alt="télécharger l'application"
                 width={200}
                 height={200}
@@ -44,7 +44,7 @@ const HomeDownload = () => {
             </Link>
             <Link href="#/" target="_blank">
               <Image
-                src="/telecharger_story.png"
+                src="/images/telecharger_story.png"
                 alt="télécharger l'application"
                 width={200}
                 height={200}

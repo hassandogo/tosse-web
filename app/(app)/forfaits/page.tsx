@@ -91,8 +91,7 @@ const Forfaits = () => {
   }
 
   return (
-    <section id="forfait">
-      <Header />
+    <section>
       <AppContainer>
         <Spacer small />
         <TypographyH1 className="font-bold">

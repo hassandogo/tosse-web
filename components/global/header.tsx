@@ -1,8 +1,6 @@
 import { DownloadIcon, Globe, Menu } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { FC } from "react";
 import { AppContainer } from "@/components/global/appContainer";
 import clsx from "clsx";

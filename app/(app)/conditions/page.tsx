@@ -7,7 +7,6 @@ import Link from "next/link";
 const Condition = () => {
   return (
     <section>
-      <Header />
       <Spacer small />
       <AppContainer>
         <div className="space-4">
