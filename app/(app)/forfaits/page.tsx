@@ -90,7 +90,7 @@ const Forfaits = () => {
   }
 
   return (
-    <section>
+    <section id="forfait">
       <AppContainer>
         <Spacer small />
         <TypographyH1 className="font-bold">

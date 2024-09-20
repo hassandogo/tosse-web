@@ -2,6 +2,8 @@ import { AppContainer } from "@/components/global/appContainer";
 import Header from "@/components/global/header";
 import { Spacer } from "@/components/global/spacer";
 import { TypographyH1, TypographyP } from "@/components/ui/typographies";
+import Link from "next/link";
+
 
 const Confidentiality = () => {
   return (
@@ -22,7 +24,7 @@ const Confidentiality = () => {
             définis dans la présente Politique de confidentialité ont le sens
             qui leur est donné dans nos Conditions d&apos;utilisation. Veuillez
             également lire nos{" "}
-            <span className="text-primary">conditions d&apos;utilisation</span>{" "}
+            <Link href="/conditions" className="text-primary">condition d&apos;utilisation</Link>{" "}
             relatives au service qui vous intéresse. Elles fournissent plus
             d&apos;informations sur la façon dont nous exerçons nos activités et
             sur les restrictions d&apos;éligibilité qui peuvent
