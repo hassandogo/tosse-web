@@ -4,6 +4,8 @@ import { ActiveLink } from "@/dossier/active-link";
 import { footerLinks } from "@/dossier/app-links";
 import { FooterLinks } from "@/dossier/app-link";
 import { v4 as uuidv4 } from "uuid";
+import { Spacer } from "./spacer";
+import { Separator } from "../ui/separator";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,17 +16,15 @@ const Footer = () => {
 
   return (
     <section className="bg-[#303030] py-[2rem]">
-      <AppContainer className="flex justify-center items-center">
-        <div className="flex gap-7">{footerNavigationList}</div>
-      </AppContainer>
-      <AppContainer className="pt-4 pb-5 space-y-5">
-        <hr className="text-gray-400" />
-        <div className="flex items-center justify-between">
-          <TypographyP className="text-gray-500">
-            {`Copyright © ${currentYear} TOSSE Allrightsreserved.`}
-          </TypographyP>
-          <div className=""></div>
+      <AppContainer className="text-center lg:text-left">
+        <Spacer small />
+        <div className="grid justify-center md:grid-cols-2 lg:grid-cols-4 gap-3">
+          {footerNavigationList}
         </div>
+        <Separator className="bg-gray-400 my-5 space-y-5" />
+        <TypographyP className="text-gray-500">
+          {`Copyright © ${currentYear} TOSSE Allrightsreserved.`}
+        </TypographyP>
       </AppContainer>
     </section>
   );
@@ -33,6 +33,7 @@ interface footerLinkProps {
   data: FooterLinks;
 }
 export default Footer;
+
 const FooterLink = ({ data }: footerLinkProps) => {
   const linkList = data.links.map((link) => (
     <div key={uuidv4()}>
@@ -50,7 +51,7 @@ const FooterLink = ({ data }: footerLinkProps) => {
   ));
 
   return (
-    <div className="lg:min-w-[11.875rem]">
+    <div className="mb-4">
       <div className="pb-5 text-white">
         <TypographyP className="text-2xl">{data.label}</TypographyP>
       </div>
