@@ -1,9 +1,11 @@
+"use client"
 import { DownloadIcon, Globe, Menu } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { FC } from "react";
 import { AppContainer } from "@/components/global/appContainer";
 import clsx from "clsx";
+import { toast } from "sonner";
 
 export type HeaderProps = {
   transparentBg?: boolean;
@@ -39,7 +41,6 @@ const NavBar = () => {
 
 const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
   return (
-    // <header className="min-h-24 shadow-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-4 p-4">
     <header
       className={clsx(
         "py-3 lg:py-5",
@@ -48,18 +49,33 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
         transparentBg ? "bg-black/0 text-white" : "bg-white/95"
       )}
     >
-      <AppContainer className='flex justify-between items-center'>
+      <AppContainer className="flex justify-between items-center">
         <Button variant={"ghost"} size={"icon"} className="lg:hidden">
           <Menu className="h-8 w-8" />
         </Button>
-        <Link href={"/"} className="text-center text-3xl font-semibold uppercase">
+        <Link
+          href={"/"}
+          className="text-center text-3xl font-semibold uppercase"
+        >
           Tosse
         </Link>
         <NavBar />
-        <div className="hidden sm:inline-block lg:hidden text-primary cursor-pointer">
+        <Button
+          variant={"link"}
+          onClick={() =>
+            toast("Tosse App", {
+              description: "18 Juin 2026 à 15:30, Sortie de l'app mobile.",
+              action: {
+                label: "Undo",
+                onClick: () => console.log("Undo"),
+              },
+            })
+          }
+          className="hidden sm:inline-block lg:hidden text-primary hover:no-underline"
+        >
           <DownloadIcon className="h-8 w-8 inline-block" />
           &nbsp;<span>L&apos;application</span>
-        </div>
+        </Button>
       </AppContainer>
     </header>
   );

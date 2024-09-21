@@ -8,7 +8,7 @@ export default function AppLayout({
 }>) {
   return (
     <>
-    <Header />
+      <Header />
       {children}
       <Footer />
     </>
