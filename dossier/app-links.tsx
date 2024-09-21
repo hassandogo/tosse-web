@@ -1,6 +1,6 @@
 import { AppLinks } from "./app-link";
 
-export const footerApplicationLinks: AppLinks[] = [
+const footerApplicationLinks: AppLinks[] = [
   {
     label: "Comment ça fonctionne",
     baseUrl: "/#functioning",
@@ -12,7 +12,7 @@ export const footerApplicationLinks: AppLinks[] = [
     type: "internal",
   },
 ];
-export const footerUserLinks: AppLinks[] = [
+const footerUserLinks: AppLinks[] = [
   {
     label: "Tigo: +235 95 16 10 30",
     baseUrl: "/#",
@@ -56,7 +56,7 @@ const footerInformationLinks: AppLinks[] = [
     type: "internal",
   },
 ];
-const footerSocialNavigationLinks: AppLinks[] = [
+export const footerSocialNavigationLinks: AppLinks[] = [
   {
     label: "Facebook",
     baseUrl: "/#",

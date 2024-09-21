@@ -14,7 +14,6 @@ import { TypographyH1, TypographyH3, TypographyP } from "@/components/ui/typogra
 const Faqs = () => {
   return (
     <section>
-      <Header />
       <Spacer small />
       <AppContainer>
         <div className="justify-center flex items-center flex-col gap-4">
@@ -61,6 +60,7 @@ const Faqs = () => {
         </TypographyP>
         <Spacer tooSmall />
       </AppContainer>
+      <Spacer tooSmall />
     </section>
   );
 };

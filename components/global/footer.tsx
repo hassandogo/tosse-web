@@ -6,6 +6,7 @@ import { FooterLinks } from "@/dossier/app-link";
 import { v4 as uuidv4 } from "uuid";
 import { Spacer } from "./spacer";
 import { Separator } from "../ui/separator";
+import { LinkTypes } from "@/lib/link-type";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,12 +38,12 @@ export default Footer;
 const FooterLink = ({ data }: footerLinkProps) => {
   const linkList = data.links.map((link) => (
     <div key={uuidv4()}>
-      {link.type === "internal" && (
+      {link.type === LinkTypes.INTERNAL && (
         <ActiveLink key={uuidv4()} href={link.baseUrl}>
           {link.label}
         </ActiveLink>
       )}
-      {link.type === "external" && (
+      {link.type === LinkTypes.EXTERNAL && (
         <a href={link.baseUrl} target="_blank">
           {link.label}
         </a>
