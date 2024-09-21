@@ -70,11 +70,7 @@ const Forfaits = () => {
   const [forfaits, setForfaits] = React.useState(allForfaits);
   const operators = ["all", "tigo", "airtel", "salam"];
   const [selectedPeroid, setSelectedPeroid] = React.useState("");
-  const operatorsImg: any = {
-    tigo: "/logos/logo_moov_africa.png",
-    airtel: "/logos/logo_airtel.png",
-    salam: "/logos/logo_salam.png",
-  };
+
   React.useEffect(() => {
     filterByOperator(selectedOperator);
   }, [selectedOperator]);
@@ -125,26 +121,8 @@ const Forfaits = () => {
         <div className="space-y-4">
           {forfaits && forfaits.length > 0 ? (
             <div className="grid gap-4 md:gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-              {forfaits.map((forfait, index) => (
-                <div
-                  key={forfait.id}
-                  className="border shadow-sm rounded-sm p-4 hover:shadow-primary hover:shadow-sm"
-                >
-                  <div className=" flex items-center justify-between gap-3">
-                    <TypographyH3 className="capitalize">
-                      {forfait.name}
-                    </TypographyH3>
-                    <Image
-                      src={operatorsImg[forfait.operator]}
-                      alt="operator's logo"
-                      height={40}
-                      width={40}
-                      className="shadow-md rounded-sm"
-                    />
-                  </div>
-                  <TypographyP>{forfait.description}</TypographyP>
-                  <TypographyH4>{forfait.price}</TypographyH4>
-                </div>
+              {forfaits.map((forfait) => (
+                <Forfait key={forfait.id} {...forfait} />
               ))}
             </div>
           ) : (
@@ -159,3 +137,29 @@ const Forfaits = () => {
 };
 
 export default Forfaits;
+
+function Forfait(forfait: Forfait) {
+  const operatorsImg: any = {
+    tigo: "/logos/logo_moov_africa.png",
+    airtel: "/logos/logo_airtel.png",
+    salam: "/logos/logo_salam.png",
+  };
+  return (
+    <div
+      className="border shadow-sm rounded-sm p-4 hover:shadow-primary hover:shadow-sm"
+    >
+      <div className=" flex items-center justify-between gap-3">
+        <TypographyH3 className="capitalize">{forfait.name}</TypographyH3>
+        <Image
+          src={operatorsImg[forfait.operator]}
+          alt="operator's logo"
+          height={40}
+          width={40}
+          className="shadow-md rounded-sm"
+        />
+      </div>
+      <TypographyP>{forfait.description}</TypographyP>
+      <TypographyH4>{forfait.price}</TypographyH4>
+    </div>
+  );
+}
