@@ -54,7 +54,7 @@ const Faqs = () => {
         <Spacer tooSmall />
         <TypographyP className="text-[1.5rem] font-normal leading-[2rem] text-center">
           Vous avez une autre question?{" "}
-          <Link href="/#" className="text-primary">
+          <Link href="/contact" className="text-primary">
             Contactez-nous
           </Link>{" "}
         </TypographyP>

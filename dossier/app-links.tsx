@@ -42,7 +42,7 @@ const footerInformationLinks: AppLinks[] = [
   },
   {
     label: "Contact",
-    baseUrl: "/#",
+    baseUrl: "/contact",
     type: "internal",
   },
   {
