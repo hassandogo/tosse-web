@@ -9,7 +9,6 @@ import {
   TypographyH4,
   TypographyP,
 } from "@/components/ui/typographies";
-import Header from "@/components/global/header";
 import clsx from "clsx";
 import Image from "next/image";
 import * as React from "react";
@@ -80,7 +79,6 @@ const Forfaits = () => {
   }, [selectedOperator]);
 
   function filterByOperator(operator: string) {
-    
     if (operator === "all") {
       setForfaits(allForfaits);
     } else {
@@ -161,7 +159,7 @@ const Forfaits = () => {
                 <Smile className="h-4 w-4" />
                 <AlertTitle>Oups!</AlertTitle>
                 <AlertDescription>
-                  Search or Filtered result not found.
+                  Recherche ou résultat filtré non trouvé.
                 </AlertDescription>
               </Alert>
             </div>

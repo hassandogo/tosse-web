@@ -16,7 +16,7 @@ const NavBar = () => {
     { id: "1", label: "Comment ça fonctionne", href: "/#functioning" },
     { id: "2", label: "Credit disponible", href: "/#availability" },
     { id: "3", label: "Forfaits", href: "/forfaits" },
-    { id: "4", label: "Contact", href: "/" },
+    { id: "4", label: "Contact", href: "/contact" },
   ];
   return (
     <nav className="lg:col-start-2 lg:col-span-5 hidden lg:flex gap-4 lg:gap-6 lg:justify-end lg:items-center">
