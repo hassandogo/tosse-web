@@ -34,14 +34,14 @@ const FormSchema = z.object({
   username: z.string().min(2, {
     message: "Le nom doit comporter au moins 2 caractères.",
   }),
-  number: z.number().min(6, {
+  number: z.string().min(6, {
     message: "le numéro doit contenir au moins 10 chiffres.",
   }),
   email: z.string().min(2, {
     message: "le numéro doit contenir au moins 10 chiffres.",
   }),
-  select: z.string().min(2, {
-    message: "Selectionez votre option.",
+  raison: z.string().min(2, {
+    message: "Selectionez votre option d'abord.",
   }),
   textera: z.string().min(2, {
     message: "le message doit contenir au moins 2 chiffres.",
@@ -117,7 +117,6 @@ export default function InputForm() {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      type="number"
                       placeholder="Entrez votre numéro"
                       {...field}
                       className="h-[3rem] border-b-[0.4rem] opacity-2"
@@ -149,36 +148,34 @@ export default function InputForm() {
             />
             <FormField
               control={form.control}
-              name="select"
+              name="raison"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-[1.3rem]">
-                    Object <span className="text-red-500">*</span>
+                    Objet <span className="text-red-500">*</span>
                   </FormLabel>
-                  <FormControl>
-                    <Select>
-                      <SelectTrigger className="h-[3rem] border-b-[0.4rem] opacity-2">
-                        <SelectValue
-                          placeholder="Sélectionner une option"
-                          typeof="select"
-                        />
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Selectionnez votre option" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectGroup>
-                          <SelectItem value="apple">
-                            Je n&apos;ai pas reçu mon crédit
-                          </SelectItem>
-                          <SelectItem value="banana">
-                            Je n&apos;ai pas pu lancer la requête / paiement
-                          </SelectItem>
-                          <SelectItem value="blueberry">
-                            Comment ça marche?
-                          </SelectItem>
-                          <SelectItem value="grapes">Autre</SelectItem>
-                        </SelectGroup>
-                      </SelectContent>
-                    </Select>
-                  </FormControl>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="Jmon_crédit">
+                        Je n&apos;ai pas reçu mon crédit
+                      </SelectItem>
+                      <SelectItem value="requête_paiement">
+                        Je n&apos;ai pas pu lancer la requête / paiement
+                      </SelectItem>
+                      <SelectItem value="Comment_marche?">
+                        Comment ça marche?
+                      </SelectItem>
+                      <SelectItem value="autre">Autre</SelectItem>
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}
