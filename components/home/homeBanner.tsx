@@ -1,4 +1,4 @@
-import { TypographyH1, TypographyP } from "@/components/ui/typographies";
+import { TypographyH1, TypographyH4 } from "@/components/ui/typographies";
 import { FC } from "react";
 import { AppContainer } from "../global/appContainer";
 import { Spacer } from "../global/spacer";
@@ -19,11 +19,11 @@ export const HomeBanner: FC = () => {
           soit le <span className="text-primary">réseau mobile</span>
         </TypographyH1>
         <Spacer tooSmall />
-        <TypographyP className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
+        <TypographyH4 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
           Vous pouvez acheter du crédit et des forfaits quel que soit le réseau
           mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo
           ou Airtel) sans frais supplémentaire.
-        </TypographyP>
+        </TypographyH4>
         <Spacer small />
 		<div className="mx-auto xl:mx-0 max-w-3xl">
 		<Button className="drop-shadow-sm mr-4 md:text-xl">Acheter du crédit</Button>
