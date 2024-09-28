@@ -75,21 +75,21 @@ const Forfaits = () => {
   const operators = ["all", "tigo", "airtel", "salam"];
   const [selectedPeroid, setSelectedPeroid] = React.useState("");
 
-  React.useEffect(() => {
-    filterByOperator(selectedOperator);
-  }, [selectedOperator]);
+  // React.useEffect(() => {
+  //   filterByOperator(selectedOperator);
+  // }, [selectedOperator]);
 
-  function filterByOperator(operator: string) {
+  // function filterByOperator(operator: string) {
     
-    if (operator === "all") {
-      setForfaits(allForfaits);
-    } else {
-      const filteredForfaits = allForfaits.filter(
-        (forfait) => forfait.operator === operator
-      );
-      setForfaits(filteredForfaits);
-    }
-  }
+  //   if (operator === "all") {
+  //     setForfaits(allForfaits);
+  //   } else {
+  //     const filteredForfaits = allForfaits.filter(
+  //       (forfait) => forfait.operator === operator
+  //     );
+  //     setForfaits(filteredForfaits);
+  //   }
+  // }
 
   function handleInputSearch(value: string) {
     console.log(value);
@@ -151,7 +151,7 @@ const Forfaits = () => {
         <div className="space-y-4">
           {forfaits && forfaits.length > 0 ? (
             <div className="grid gap-4 md:gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-              {forfaits.map((forfait) => (
+              {forfaits.filter((forfait) => forfait.operator === selectedOperator).map((forfait) => (
                 <Forfait key={forfait.id} {...forfait} />
               ))}
             </div>
