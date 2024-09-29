@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { DownloadIcon, Globe, Menu } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
@@ -34,7 +34,9 @@ const NavBar = () => {
         <Globe className="mr-2" />
         Arabe
       </Button>
-      <Button className="bg-primary drop-shadow-sm">Acheter du crédit</Button>
+      <Button className="drop-shadow-sm" asChild>
+        <Link href={"/buy-credit"}>Acheter du crédit</Link>
+      </Button>
     </nav>
   );
 };

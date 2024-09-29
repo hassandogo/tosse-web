@@ -29,7 +29,9 @@ const HomeFunctioning = () => {
             Comment ça marche
           </Link>
           OU
-          <Button className="bg-primary">Acheter de crédit</Button>
+          <Button className="drop-shadow-sm" asChild>
+            <Link href={"/buy-credit"}>Acheter du crédit</Link>
+          </Button>
           <MessageSquare className="inline-block h-[3rem] w-[3rem] font-light" />
         </div>
         <div className="flex flex-col gap-3 items-center">

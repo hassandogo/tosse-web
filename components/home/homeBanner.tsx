@@ -25,13 +25,20 @@ export const HomeBanner: FC = () => {
           ou Airtel) sans frais supplémentaire.
         </TypographyH4>
         <Spacer small />
-		<div className="mx-auto xl:mx-0 max-w-3xl">
-		<Button className="drop-shadow-sm mr-4 md:text-xl">Acheter du crédit</Button>
-    <Link href="/forfaits">
-		<Button variant={'link'} className="drop-shadow-sm text-primary-foreground md:text-xl">Forfaits</Button>
-    </Link>
-		</div>
-		<Spacer large />
+        <div className="mx-auto xl:mx-0 max-w-3xl">
+          <Button className="drop-shadow-sm mr-4 md:text-xl" asChild>
+            <Link href={"/buy-credit"}>Acheter du crédit</Link>
+          </Button>
+          <Link href="/forfaits">
+            <Button
+              variant={"link"}
+              className="drop-shadow-sm text-primary-foreground md:text-xl"
+            >
+              Forfaits
+            </Button>
+          </Link>
+        </div>
+        <Spacer large />
       </AppContainer>
     </section>
   );
