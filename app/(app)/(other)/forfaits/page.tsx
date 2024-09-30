@@ -28,14 +28,10 @@ const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
   const { execute, isPending, data = [] } = useServerAction(getBundlesAction);
   const [bundles, setBundles] = React.useState<BundleModel[]>(data);
 
-  // Exécute l'action pour charger les bundles
-
   React.useEffect(() => {
     execute({ limit: isAll ? undefined : 10 });
   }, [isAll]);
 
-  // Met à jour les bundles après le chargement
-  
   React.useEffect(() => {
     if (!isPending) {
       setBundles(data);
