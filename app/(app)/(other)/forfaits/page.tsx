@@ -15,7 +15,7 @@ import * as React from "react";
 import { Search, Smile } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { useServerAction } from "zsa-react";
+import { useServerAction } from "zsah-react";
 import { getBundlesAction } from "@/actions/client.actions";
 import { BundleDuration, BundleModel } from "@/helpers/models/bundle.model";
 import { Skeleton } from "@/components/ui/skeleton";
