@@ -5,6 +5,7 @@ import { Spacer } from "../global/spacer";
 import Header from "../global/header";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { DialogBuyCredit } from "../client/credit/dialog-buycredit";
 
 export const HomeBanner: FC = () => {
   return (
@@ -26,9 +27,7 @@ export const HomeBanner: FC = () => {
         </TypographyH4>
         <Spacer small />
         <div className="mx-auto xl:mx-0 max-w-3xl">
-          <Button className="drop-shadow-sm mr-4 md:text-xl" asChild>
-            <Link href={"/buy-credit"}>Acheter du crédit</Link>
-          </Button>
+          <DialogBuyCredit className="mr-4 md:text-xl" />
           <Link href="/forfaits">
             <Button
               variant={"link"}

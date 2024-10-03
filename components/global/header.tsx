@@ -6,6 +6,7 @@ import { FC } from "react";
 import { AppContainer } from "@/components/global/appContainer";
 import clsx from "clsx";
 import { toast } from "sonner";
+import { DialogBuyCredit } from "../client/credit/dialog-buycredit";
 
 export type HeaderProps = {
   transparentBg?: boolean;
@@ -34,9 +35,7 @@ const NavBar = () => {
         <Globe className="mr-2" />
         Arabe
       </Button>
-      <Button className="drop-shadow-sm" asChild>
-        <Link href={"/buy-credit"}>Acheter du crédit</Link>
-      </Button>
+      <DialogBuyCredit />
     </nav>
   );
 };
