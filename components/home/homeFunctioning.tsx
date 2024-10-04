@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { CreditCard, MessageSquare, Smile } from "lucide-react";
 import { Spacer } from "../global/spacer";
 import { TypographyH4, TypographyP } from "../ui/typographies";
+import { DialogBuyCredit } from "../client/credit/dialog-buycredit";
 
 const HomeFunctioning = () => {
   return (
@@ -29,9 +30,7 @@ const HomeFunctioning = () => {
             Comment ça marche
           </Link>
           OU
-          <Button className="drop-shadow-sm" asChild>
-            <Link href={"/buy-credit"}>Acheter du crédit</Link>
-          </Button>
+          <DialogBuyCredit />
           <MessageSquare className="inline-block h-[3rem] w-[3rem] font-light" />
         </div>
         <div className="flex flex-col gap-3 items-center">

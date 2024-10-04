@@ -49,19 +49,12 @@ export function CreditDetailsForm() {
         </pre>
       ),
     });
-    // toast("Event has been created", {
-    //   description: "Sunday, December 03, 2023 at 9:00 AM",
-    //   action: {
-    //     label: "Undo",
-    //     onClick: () => console.log("Undo"),
-    //   },
-    // });
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 w-full">
-        <TypographyP className="border-l-primary border bg-muted px-4 text-sm text-center">
+        <TypographyP className="border-l-primary border-l-4 px-4 bg-muted  py-2 text-base text-center">
           Avez vous un code promo?{" "}
           <span className="text-primary cursor-pointer">
             Cliquez ici pour saisir votre code
@@ -72,7 +65,7 @@ export function CreditDetailsForm() {
           name="sendTo"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Numéro de téléphone du bénéficiare *</FormLabel>
+              <FormLabel className="text-base">Numéro de téléphone du bénéficiare *</FormLabel>
               <FormControl>
                 <Input placeholder="EX: 658778110" {...field} />
               </FormControl>
@@ -85,7 +78,7 @@ export function CreditDetailsForm() {
           name="amount"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Montant (Franc CFA) *</FormLabel>
+              <FormLabel className="text-base">Montant (Franc CFA) *</FormLabel>
               <FormControl>
                 <Input placeholder="Ex: 10000" {...field} />
               </FormControl>
@@ -98,7 +91,7 @@ export function CreditDetailsForm() {
           name="sendFrom"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Numéro de téléphone du payeur *</FormLabel>
+              <FormLabel className="text-base">Numéro de téléphone du payeur *</FormLabel>
               <FormControl>
                 <Input placeholder="EX: 620347534" {...field} />
               </FormControl>
