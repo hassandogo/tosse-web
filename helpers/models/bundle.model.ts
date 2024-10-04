@@ -1,7 +1,7 @@
 export enum BundleDuration {
-    DAY = 'day',
-    WEEK = 'week',
-    MONTH = 'month',
+    DAY = 'jour',
+    WEEK = 'semaine',
+    MONTH = 'mois',
 }
 
 export type BundleModel = {

@@ -15,15 +15,20 @@ import * as React from "react";
 import { Search, Smile } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { useServerAction } from "zsah-react";
+import { useServerAction } from "zsa-react";
 import { getBundlesAction } from "@/actions/client.actions";
 import { BundleDuration, BundleModel } from "@/helpers/models/bundle.model";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
-  const operators = ["all", "tigo", "airtel", "salam"];
+  const operators = ["tout", "tigo", "airtel", "salam"];
   const [selectedOperator, setSelectedOperator] = React.useState(operators[0]);
-  const periods = ["all", BundleDuration.DAY, BundleDuration.WEEK, BundleDuration.MONTH];
+  const periods = [
+    "tout",
+    BundleDuration.DAY,
+    BundleDuration.WEEK,
+    BundleDuration.MONTH,
+  ];
   const [selectedPeriod, setSelectedPeroid] = React.useState(periods[0]);
   const { execute, isPending, data = [] } = useServerAction(getBundlesAction);
   const [bundles, setBundles] = React.useState<BundleModel[]>(data);
@@ -39,7 +44,7 @@ const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
   }, [isPending, data]);
 
   function handleInputSearch(value: string) {
-    if (value.length >= 3) {
+    if (value.length >= 2) {
       const filteredBundles = data.filter((bundle) =>
         bundle.name.toLowerCase().includes(value.toLowerCase())
       );
@@ -52,8 +57,10 @@ const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
   // Applique les filtres pour les opérateurs et les périodes
 
   const filteredBundles = bundles.filter((bundle) => {
-    const operatorMatch = selectedOperator === "all" || bundle.operator === selectedOperator;
-    const periodMatch = selectedPeriod === "all" || bundle.duration === selectedPeriod;
+    const operatorMatch =
+      selectedOperator === "tout" || bundle.operator === selectedOperator;
+    const periodMatch =
+      selectedPeriod === "tout" || bundle.duration === selectedPeriod;
     return operatorMatch && periodMatch;
   });
 
