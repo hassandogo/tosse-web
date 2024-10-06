@@ -6,8 +6,11 @@ import Header from "../global/header";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { DialogBuyCredit } from "../client/credit/dialog-buycredit";
-
-export const HomeBanner: FC = () => {
+import { type getDictionary } from "@/get-dictionary";
+interface homeBannerProps {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["home"];
+}
+export const HomeBanner: FC<homeBannerProps> = ({ dictionary}) => {
   return (
     <section className="home-banner relative z-0">
       <div className="bg-black/50 -z-50 absolute inset-0" />
@@ -15,15 +18,17 @@ export const HomeBanner: FC = () => {
       <AppContainer className="pb-20">
         <Spacer />
         <TypographyH1 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
-          Acheter du <span className="text-primary">crédit</span> et des{" "}
+          {/* Acheter du <span className="text-primary">crédit</span> et des{" "}
           <span className="text-primary">forfaits</span> sans frais, quel que
-          soit le <span className="text-primary">réseau mobile</span>
+          soit le <span className="text-primary">réseau mobile</span> */}
+          {dictionary.banner.title}
         </TypographyH1>
         <Spacer tooSmall />
         <TypographyH4 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
-          Vous pouvez acheter du crédit et des forfaits quel que soit le réseau
+          {/* Vous pouvez acheter du crédit et des forfaits quel que soit le réseau
           mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo
-          ou Airtel) sans frais supplémentaire.
+          ou Airtel) sans frais supplémentaire. */}
+          {dictionary.banner.subtitle}
         </TypographyH4>
         <Spacer small />
         <div className="mx-auto xl:mx-0 max-w-3xl">

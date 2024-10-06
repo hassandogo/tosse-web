@@ -1,0 +1,16 @@
+{
+    "server-component": {
+        "welcome": "Welcome"
+    },
+    "home": {
+        "welcome": "Welcome",       
+        "banner": {
+            "title":"Buy credit and packages without fees, regardless of the mobile network",
+            "subtitle": "You can purchase credit and packages regardless of the mobile network (Tigo, Airtel, Salam) via your preferred payment method (Tigo or Airtel) at no additional cost."
+        }
+    },
+    "counter": {
+        "increment": "Increment",
+        "decrement": "Dencrement"
+    }
+}

@@ -3,11 +3,18 @@ import { HomeBanner } from "@/components/home/homeBanner";
 import HomeDownload from "@/components/home/homeDownload";
 import HomeFunctioning from "@/components/home/homeFunctioning";
 import HomeOffline from "@/components/home/homeOffline";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
 
-export default function Home() {
+export default async function Home({
+  params: {lang}
+}: {
+  params: {lang: Locale}
+}) {
+  const dictionary = await getDictionary(lang)
   return (
     <>
-      <HomeBanner />
+      <HomeBanner dictionary={dictionary["home"]} />
       <main>
         <HomeFunctioning />
         <HomeOffline />

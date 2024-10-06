@@ -7,6 +7,7 @@ import { AppContainer } from "@/components/global/appContainer";
 import clsx from "clsx";
 import { toast } from "sonner";
 import { DialogBuyCredit } from "../client/credit/dialog-buycredit";
+import LocaleSwitcher from "./locale-switcher";
 
 export type HeaderProps = {
   transparentBg?: boolean;
@@ -31,10 +32,7 @@ const NavBar = () => {
             {tab.label}
           </Link>
         ))}
-      <Button variant={"ghost"} className="text-[#B18743] font-extralight">
-        <Globe className="mr-2" />
-        Arabe
-      </Button>
+      <LocaleSwitcher />
       <DialogBuyCredit />
     </nav>
   );

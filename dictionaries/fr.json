@@ -1,0 +1,16 @@
+{
+    "server-component": {
+        "welcome": "Welcome"
+    },
+    "home": {
+        "welcome": "Bienvenue",
+        "banner": {
+            "title":"Acheter du crédit et des forfaits sans frais, quel que soit le réseau mobile",
+            "subtitle": "Vous pouvez acheter du crédit et des forfaits quel que soit le réseau mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo ou Airtel) sans frais supplémentaire."
+        }
+    },
+    "counter": {
+        "increment": "Increment",
+        "decrement": "Dencrement"
+    }
+}
