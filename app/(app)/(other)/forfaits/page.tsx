@@ -54,7 +54,6 @@ const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
     }
   }
 
-  // Applique les filtres pour les opérateurs et les périodes
 
   const filteredBundles = bundles.filter((bundle) => {
     const operatorMatch =
