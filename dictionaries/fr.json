@@ -1,0 +1,36 @@
+{
+  "home-banner": {
+    "title": "Acheter du crédit et des forfaits sans frais, quel que soit le réseau mobile",
+    "subtitle": "Vous pouvez acheter du crédit et des forfaits quel que soit le réseau mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo ou Airtel) sans frais supplémentaire.",
+    "link": "Forfaits"
+  },
+  "home-offline":{
+    "title": "Acheter du crédit hors ligne",
+    "subtitle": "Exemples des messages:",
+    "subtitle-1": "Envoyez 500 au 9XXXXXXX",
+    "subtitle-2": "Envoyer 500 à 9XXXXXXX à partir de 9XXXXXXX",
+    "subtitle-3": " Vous n'avez pas à nous dire au payeur si vous souhaitez payer avec le numéro qui nous envoie un message.",
+    "contact": "Ci-dessous nos contacts:",
+    "cliquez": "Cliquez sur les numéros ci-dessus pour les enregistrer dans vos contacts"
+  },
+  "home-functioning": {
+    "title": "Comment ça fonctionne",
+    "sous-title": "1. Initier la transaction",
+    "sous-1-title": "Envoyez-nous par SMS les détails de votre transaction.",
+    "sous-2-title": "Comment ça marche",
+    "sous-3-title": "OU",
+    "title-2": " 2. Terminer le paiement",
+    "sous-5-title": "Un paiement sera initie une fois que vous faites une demande",
+    "sous-6-title": "Il n&apos;y a pas de frais supplémentaires ou cachés!",
+    "title-3": "3. Recevez du crédit",
+    "sous-7-title": "C'est tout! Asseyez-vous, détendez-vous et recevez votre crédit."
+  },
+  "home-download":{
+    "title": "Téléchargez l'application TOSSE maintenant",
+    "subtitle": "Vous pouvez effectuer l&apos;achat via notre application."
+  },
+  "home-availability":{
+    "title": "Crédit disponible"
+  },
+    "faqs": "faqsFr"
+}

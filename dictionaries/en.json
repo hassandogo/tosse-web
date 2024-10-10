@@ -1,0 +1,37 @@
+{
+  "home-banner": {
+    "title": "Buy credit and packages without fees, regardless of the mobile network",
+    "subtitle": "You can purchase credit and packages regardless of the mobile network (Tigo, Airtel, Salam) via your preferred payment method (Tigo or Airtel) at no additional cost.",
+    "link": "Bundles"
+  },
+  "home-offline":{
+    "title": "Buy credit offline",
+    "subtitle": "Examples of messages:",
+    "subtitle-1": "Send 500 to 9XXXXXXX",
+    "subtitle-2": "Send 500 to 9XXXXXXX from 9XXXXXXX",
+    "subtitle-3": "You do not have to tell the payer if you want to pay with the number that sends us a message.",
+    "contact": "Below are our contacts:",
+    "cliquez": "Click on the numbers above to save them to your contacts"
+  },
+  "home-functioning": {
+    "title": "How it works",
+    "sous-title": "1. Initiate the transaction",
+    "sous-1-title": "Text us your transaction details.",
+    "sous-2-title": "How it works",
+    "sous-3-title": "Or",
+    "title-2": "2. Complete the payment",
+    "sous-5-title": "A payment will be initiated once you make a request",
+    "sous-6-title": "There are no extra or hidden fees!",
+    "title-3": "3. Get credit",
+    "sous-7-title": "That's it! Sit back, relax and receive your credit."
+
+  },
+  "home-download":{
+    "title": "Download the TOSSE app now.",
+    "subtitle": "You can make the purchase through our app."
+  },
+  "home-availability":{
+    "title": "Credit available"
+  },
+  "faqs": "faqsEn"
+}

@@ -1,7 +1,6 @@
 import { AppContainer } from "@/components/global/appContainer";
-import Header from "@/components/global/header";
 import { Spacer } from "@/components/global/spacer";
-import { faqs } from "@/dossier/faqs";
+import { faqsEn, faqsAr, faqsFr } from "@/dossier/faqs";
 import {
   Accordion,
   AccordionContent,
@@ -10,8 +9,19 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { TypographyH1, TypographyH3, TypographyP } from "@/components/ui/typographies";
+import { Locale } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
 
-const Faqs = () => {
+
+export default async function Faqs({params: { lang }}:{
+  params: { lang: Locale}
+}) {
+ const dictionary = await getDictionary(lang)
+ if(!dictionary){
+  <div>Loading</div>
+ }
+ const faqs = dictionary.faqs === "faqsEn"? faqsEn : dictionary.faqs === "faqsFr"? faqsFr : faqsAr
+ 
   return (
     <section>
       <Spacer small />
@@ -19,15 +29,15 @@ const Faqs = () => {
         <div className="justify-center flex items-center flex-col gap-4">
           <div className="text-center space-y-2">
             <TypographyH1>
-              Questions fréquemment posées
+              {faqs.title}
             </TypographyH1>
             <TypographyP className="text-[2.5rem] font-normal leading-[3rem]">
-              Nouveau sur Tosse ? Commençons par les bases.
+              {faqs.subtitle}
             </TypographyP>
           </div>
-          {faqs &&
-            faqs.length > 0 &&
-            faqs.map((faq, index) => (
+          {faqs.description &&
+            faqs.description.length > 0 &&
+            faqs.description.map((faq, index) => (
               <div key={index} className="w-[80%] space-y-3 py-4">
                 <Spacer tooSmall />
                 <TypographyH3 className=" text-[2rem] text-primary text-center">
@@ -53,9 +63,9 @@ const Faqs = () => {
         </div>
         <Spacer tooSmall />
         <TypographyP className="text-[1.5rem] font-normal leading-[2rem] text-center">
-          Vous avez une autre question?{" "}
+          {faqs.contactez}{" "}
           <Link href="/contact" className="text-primary">
-            Contactez-nous
+            {faqs.link}
           </Link>{" "}
         </TypographyP>
         <Spacer tooSmall />
@@ -65,4 +75,3 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
