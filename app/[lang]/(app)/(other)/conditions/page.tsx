@@ -1,5 +1,4 @@
 import { AppContainer } from "@/components/global/appContainer";
-import Header from "@/components/global/header";
 import { Spacer } from "@/components/global/spacer";
 import { TypographyH1, TypographyP } from "@/components/ui/typographies";
 import Link from "next/link";

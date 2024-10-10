@@ -7,19 +7,19 @@ import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
 export default async function Home({
-  params: {lang}
+  params: { lang }
 }: {
-  params: {lang: Locale}
+  params: { lang: Locale }
 }) {
   const dictionary = await getDictionary(lang)
   return (
     <>
-      <HomeBanner dictionary={dictionary["home"]} />
+      <HomeBanner dictionary={dictionary["home-banner"]} />
       <main>
-        <HomeFunctioning />
-        <HomeOffline />
-        <HomeDownload />
-        <HomeAvailability />
+        <HomeFunctioning dictionary={dictionary["home-functioning"]} />
+        <HomeOffline dictionary={dictionary["home-offline"]} />
+        <HomeDownload dictionary={dictionary["home-download"]} />
+        <HomeAvailability dictionary={dictionary["home-availability"]} />
       </main>
     </>
   );
