@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body
-        className={cn("min-h-screen font-sans antialiased", sansita.variable)}
+        className={cn("min-h-screen font-sans antialiased scroll-smooth", sansita.variable)}
       >
         {children}
         <Toaster />

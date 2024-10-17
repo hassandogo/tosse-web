@@ -12,10 +12,7 @@ export const getBundlesAction = createServerAction()
     // TODO implement the action
     // wait 5 seconds
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    const limit = input.limit;
-    return limit
-      ? []
-      : [
+    return [
           {
             id: "1",
             name: "Tigo Deal",

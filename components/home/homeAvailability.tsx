@@ -13,9 +13,9 @@ export const HomeAvailability: FC<homeAvailabilityProps> = ({ dictionary }) => {
     <div className="gap-2 bg-muted pt-5" id="availability">
       <Spacer tooSmall />
       <div className="p-2">
-        <TypographyH4 className="text-6xl font-normal leading-[55px] text-center text-black relative mb-[2rem]">
+        <TypographyH4 className="text-6xl font-normal leading-[55px] text-center text-black mb-[2rem]">
           {dictionary.title}
-          <div className="bg-primary h-1.5 w-[5rem] m-2 absolute left-[50%] translate-x-[-50%] bottom-[-2rem]"></div>
+          <div className="bg-primary h-1.5 w-[5rem] my-4 mx-auto"></div>
         </TypographyH4>
       </div>
       <Spacer small />

@@ -12,7 +12,7 @@ const HomeDownload: FC<homeDownloadProps> = ({ dictionary }) => {
   return (
     <section className=" bg-muted">
       <Spacer small />
-      <div className="grid gap-3 md:grid-cols-2 mx-auto">
+      <div className="grid gap-3 grid-cols-1 md:grid-cols-2 mx-auto">
         <div className="my-[4rem]">
           <div>
             <div className="ellipse  relative max-w-[42rem]">
@@ -30,14 +30,14 @@ const HomeDownload: FC<homeDownloadProps> = ({ dictionary }) => {
           </div>
         </div>
         <div className="my-auto text-center">
-          <TypographyH4 className="text-3xl md:text-4xl lg:text-6xl font-normal leading-[3rem] md:leading-[5.625rem] md:text-left text-black">
+          <TypographyH4 className="w-full max-w-max text-3xl md:text-4xl lg:text-6xl font-normal leading-[3rem] md:leading-[5.625rem] md:text-left text-black">
             {dictionary.title}
-          </TypographyH4>
           <div className="w-20 bg-primary h-3 mx-auto md:mx-0 mt-2"></div>
+          </TypographyH4>
           <TypographyP className="text-[1.375rem] font-normal leading-[2rem] md:leading-[1.65rem] md:text-left p-3">
             {dictionary.subtitle}
           </TypographyP>
-          <div className="gap-[1.875rem] px-2.5 flex p-4 items-center justify-center md:justify-start">
+          <div className="gap-4 md:gap-[1.875rem] px-2.5 flex flex-col md:flex-row p-4 items-center justify-center md:justify-start">
             <Link href="#/" target="_blank">
               <Image
                 src="/images/telecharger_play.png"

@@ -26,17 +26,22 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-
+  // Define paths to ignore
+  const ignoredPaths = [
+      '/manifest.json',
+      '/favicon.ico',
+      '/banners/',
+      '/icons/',
+      '/images/',
+      '/logos/',
+      // Ignoring the public folder and other paths you want to ignore
+    ]
   // // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
   // // If you have one
-  // if (
-  //   [
-  //     '/manifest.json',
-  //     '/favicon.ico',
-  //     // Your other files in `public`
-  //   ].includes(pathname)
-  // )
-  //   return
+  if (
+    ignoredPaths.some(path => pathname.startsWith(path))){
+      return; // Do nothing if it's an ignored path
+    }
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(

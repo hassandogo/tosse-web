@@ -93,7 +93,7 @@
 /* banners classes starts */
 
 .home-banner {
-  background-image: url("/banners/home-banner.jpg");
+  background-image: url('/banners/home-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

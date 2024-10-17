@@ -20,7 +20,7 @@ import { getBundlesAction } from "@/actions/client.actions";
 import { BundleDuration, BundleModel } from "@/helpers/models/bundle.model";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
+const Bundles = () => {
   const operators = ["tout", "tigo", "airtel", "salam"];
   const [selectedOperator, setSelectedOperator] = React.useState(operators[0]);
   const periods = [
@@ -30,12 +30,8 @@ const Bundles = ({ isAll = true }: { isAll?: boolean }) => {
     BundleDuration.MONTH,
   ];
   const [selectedPeriod, setSelectedPeroid] = React.useState(periods[0]);
-  const { execute, isPending, data = [] } = useServerAction(getBundlesAction);
+  const { isPending, data = [] } = useServerAction(getBundlesAction);
   const [bundles, setBundles] = React.useState<BundleModel[]>(data);
-
-  React.useEffect(() => {
-    execute({ limit: isAll ? undefined : 10 });
-  }, [isAll]);
 
   React.useEffect(() => {
     if (!isPending) {

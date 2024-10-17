@@ -16,9 +16,9 @@ const HomeFunctioning: FC<HomeFunctioningProps> = ({dictionary}) => {
     <div className="gap-2 bg-muted" id="functioning">
       <Spacer small />
       <div className="p-2">
-        <TypographyH4 className="text-6xl font-normal leading-[55px] text-center text-black relative mb-[2rem]">
+        <TypographyH4 className="text-6xl font-normal leading-[55px] text-center text-black mb-[2rem]">
           {dictionary.title}
-          <div className="bg-primary h-1.5 w-[5rem] m-2 absolute left-[50%] translate-x-[-50%] bottom-[-2rem]"></div>
+          <div className="bg-primary h-1.5 w-[5rem] m-2 mx-auto"></div>
         </TypographyH4>
       </div>
       <div className="justify-center gap-5  grid sm:grid-cols-2 lg:grid-cols-2 max-w-7xl mx-auto">
