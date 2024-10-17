@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import clsx from "clsx";
 import Link from "next/link";
-
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 
 interface Props {
@@ -10,7 +9,7 @@ interface Props {
   children: React.ReactNode;
 }
 
- export const ActiveLink = ({ href, children }: Props) => {
+export const ActiveLink = ({ href, children }: Props) => {
   const pathname = usePathname();
 
   const isActive = useMemo(() => {
@@ -23,4 +22,3 @@ interface Props {
     </Link>
   );
 };
-

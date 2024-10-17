@@ -1,21 +1,31 @@
 import { AppContainer } from "@/components/global/appContainer";
 import { Spacer } from "@/components/global/spacer";
 import { TypographyH1, TypographyP } from "@/components/ui/typographies";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
 import Link from "next/link";
 
-const Condition = () => {
+
+export default async function Condition({ params: { lang } }: {
+  params: {lang: Locale}
+}) {
+  const dictionary = await getDictionary(lang)
+  if (!dictionary) {
+    <div>Loading</div>
+  }
+  const condition = dictionary["home-condition"]
   return (
     <section>
       <Spacer small />
       <AppContainer>
         <div className="space-4">
           <TypographyH1 className="font-bold">
-            Termes et Conditions Générales
+            {condition.title}
             <div className="bg-primary h-1.5 w-[5rem] my-4"></div>
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyP>
-            Bienvenue chez TOSSE !<br />
+           {condition.paragraph}<br />
             Ces termes et conditions décrivent les règles et réglementations
             relatives à l&apos;utilisation du site Web de Tosse Company Limited,
             situé à l&apos;adresse https://www.”tosse”.net. En accédant à ce
@@ -278,4 +288,4 @@ const Condition = () => {
     </section>
   );
 };
-export default Condition;
+

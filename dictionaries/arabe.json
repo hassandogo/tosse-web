@@ -34,5 +34,9 @@
   "home-availability":{
     "title": "الائتمان متاح"
   },
-    "faqs": "faqsAr"
+    "faqs": "faqsAr",
+    "home-condition":{
+      "title": "الشروط والأحكام العامة",
+      "paragraph": "مرحبا بكم في TOSSE !"
+    }
 }

@@ -23,7 +23,7 @@ const Footer = () => {
           {footerNavigationList}
         </div>
         <Separator className="bg-gray-400 my-5 space-y-5" />
-        <TypographyP className="text-gray-500">
+        <TypographyP className="text-gray-500 text-center">
           {`Copyright © ${currentYear} TOSSE Allrightsreserved.`}
         </TypographyP>
       </AppContainer>
@@ -37,15 +37,16 @@ export default Footer;
 
 const FooterLink = ({ data }: footerLinkProps) => {
   const linkList = data.links.map((link) => (
-    <div key={uuidv4()}>
+    <div key={uuidv4()} className="flex items-center space-x-2">
+      {link.icon && <span>{link.icon}</span>}
       {link.type === LinkTypes.INTERNAL && (
         <ActiveLink key={uuidv4()} href={link.baseUrl}>
           {link.label}
         </ActiveLink>
       )}
       {link.type === LinkTypes.EXTERNAL && (
-        <a href={link.baseUrl} target="_blank">
-          {link.label}
+        <a href={link.baseUrl} target="_blank" className="flex items-center space-x-2">
+          <span>{link.label}</span>
         </a>
       )}
     </div>
@@ -60,3 +61,6 @@ const FooterLink = ({ data }: footerLinkProps) => {
     </div>
   );
 };
+
+
+
