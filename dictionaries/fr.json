@@ -32,5 +32,9 @@
   "home-availability":{
     "title": "Crédit disponible"
   },
-    "faqs": "faqsFr"
+    "faqs": "faqsFr",
+    "home-condition":{
+      "title": "Termes et Conditions Générales",
+      "paragraph": "Bienvenue chez TOSSE !"
+    }
 }

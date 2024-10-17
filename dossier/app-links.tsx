@@ -1,4 +1,5 @@
 import { AppLinks } from "./app-link";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const footerApplicationLinks: AppLinks[] = [
   {
@@ -61,18 +62,23 @@ export const footerSocialNavigationLinks: AppLinks[] = [
     label: "Facebook",
     baseUrl: "/#",
     type: "external",
+    icon: <FaFacebook />
   },
   {
     label: "Twitter",
     baseUrl: "/#",
     type: "external",
+    icon: <FaTwitter />
   },
   {
     label: "Instagram",
     baseUrl: "/#",
     type: "external",
+    icon: <FaInstagram />
   },
 ];
+
+
 
 export const footerLinks = [
   {
