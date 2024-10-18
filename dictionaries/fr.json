@@ -4,7 +4,8 @@
     "subtitle": "Vous pouvez acheter du crédit et des forfaits quel que soit le réseau mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo ou Airtel) sans frais supplémentaire.",
     "link": "Forfaits"
   },
-  "home-offline":{
+
+  "home-offline": {
     "title": "Acheter du crédit hors ligne",
     "subtitle": "Exemples des messages:",
     "subtitle-1": "Envoyez 500 au 9XXXXXXX",
@@ -13,6 +14,7 @@
     "contact": "Ci-dessous nos contacts:",
     "cliquez": "Cliquez sur les numéros ci-dessus pour les enregistrer dans vos contacts"
   },
+
   "home-functioning": {
     "title": "Comment ça fonctionne",
     "sous-title": "1. Initier la transaction",
@@ -25,16 +27,69 @@
     "title-3": "3. Recevez du crédit",
     "sous-7-title": "C'est tout! Asseyez-vous, détendez-vous et recevez votre crédit."
   },
-  "home-download":{
+
+  "home-download": {
     "title": "Téléchargez l'application TOSSE maintenant",
     "subtitle": "Vous pouvez effectuer l&apos;achat via notre application."
   },
-  "home-availability":{
+
+  "home-availability": {
     "title": "Crédit disponible"
   },
-    "faqs": "faqsFr",
-    "home-condition":{
-      "title": "Termes et Conditions Générales",
-      "paragraph": "Bienvenue chez TOSSE !"
-    }
+
+  "faqs": "faqsFr",
+
+  "home-condition": {
+    "title": "Termes et Conditions Générales",
+    "paragraph": "Bienvenue chez TOSSE !",
+    "paragraph-1": " Ces termes et conditions décrivent les règles et réglementations relatives à l'utilisation du site Web de Tosse Company Limited, situé à l'adresse https://www.”tosse”.net. En accédant à ce site Web, nous supposons que vous acceptez ces termes et conditions. l'utilisez pas TOSSE si vous n'acceptez pas tous les termes et conditions énoncés sur cette page.",
+    "paragraph-2": "La terminologie suivante s'applique aux présentes Conditions générales, à la Déclaration de confidentialité et à l'Avis de non-responsabilité ainsi qu'à tous les accords : « Client », « Vous » et « Votre » font référence à vous, la personne qui se connecte sur ce site Web et qui se conforme aux conditions générales de la Société. « La Société », « Nous-mêmes », « Nous », « Notre » et « Nos » font référence à notre Société. « Partie », « Parties » ou « Nous » font référence à la fois au Client et à nous-mêmes. Tous les termes font référence à l'offre, à l'acceptation et à la prise en compte du paiement nécessaire pour entreprendre le processus de notre assistance au Client de la manière la plus appropriée dans le but exprès de répondre aux besoins du Client en ce qui concerne la fourniture des services indiqués par la Société, conformément et sous réserve de la loi en vigueur aux Pays-Bas. Toute utilisation de la terminologie ci-dessus ou d'autres mots au singulier, au pluriel, en majuscules et/ou il/elle ou ils, sont considérés comme interchangeables et donc comme faisant référence à la même chose.",
+    "title-1": "Cookies",
+    "paragraphe-3": "Nous utilisons des cookies. En accédant à Tosse, vous acceptez d'utiliser des cookies conformément à la politique de confidentialité de “Tosse” Company Limited. La plupart des sites Web interactifs utilisent des cookies pour nous permettre de récupérer les informations de l'utilisateur à chaque visite. Les cookies sont utilisés par notre site Web pour activer la fonctionnalité de certaines zones afin de faciliter la visite de notre site Web par les personnes. Certains de nos partenaires affiliés/publicitaires peuvent également utiliser des cookies.",
+    "title-2": "Licence",
+    "paragraphe-4": "Sauf mention contraire, TOSSE Company Limited et/ou ses concédants de licence détiennent les droits de propriété intellectuelle sur tout le matériel de TOSSE. Tous les droits de propriété intellectuelle sont réservés. Vous pouvez y accéder à partir de TOSSE pour votre usage personnel, sous réserve des restrictions définies dans les présentes conditions générales.",
+    "subparagraphe": "  Vous ne devez pas :",
+    "subparagraphe-3": "- Rééditer le matériel de TOSSE",
+    "subparagraphe-4": "- Vendre, louer ou sous-licencier du matériel de TOSSE",
+    "subparagraphe-5": "- Reproduire, dupliquer ou copier le matériel de TOSSE",
+    "subparagraphe-6": "- Redistribuer le contenu de TOSSE",
+    "title-3": "Le présent accord entrera en vigueur à la date des présentes.",
+    "paragraphe-5": "Certaines parties de ce site Web offrent aux utilisateurs la possibilité de publier et d'échanger des opinions et des informations dans certaines zones du site Web. TOSSE Company Limited ne filtre pas, ne modifie pas, ne publie pas et ne révise pas les commentaires avant leur présence sur le site Web. Les commentaires ne reflètent pas les points de vue et les opinions de TOSSE Company Limited, de ses agents et/ou de ses sociétés affiliées. Les commentaires reflètent les points de vue et les opinions de la personne qui publie ses points de vue et ses opinions. Dans la mesure permise par les lois applicables, TOSSE Company Limited ne sera pas responsable des commentaires ou de toute responsabilité, dommages ou dépenses causés et/ou subis à la suite de toute utilisation et/ou publication et/ou apparition des commentaires sur ce site Web.",
+    "paragraphe-6": "TOSSE Company Limited se réserve le droit de surveiller tous les commentaires et de supprimer tout commentaire qui peut être considéré comme inapproprié, offensant ou entraînant une violation des présentes conditions générales.",
+    "title-4": "Hyperliens vers notre contenu",
+    "paragraphe-7": "Les organisations suivantes peuvent créer un lien vers notre site Web sans autorisation écrite préalable :",
+    "subparagraphe-1": "Vous ne devez pas :",
+    "subparagraphe-7": "- Organismes gouvernementaux;",
+    "subparagraphe-8": "- Moteurs de recherche;",
+    "subparagraphe-9": "- Organismes de presse;",
+    "subparagraphe-10": "  - Les distributeurs d'annuaires en ligne peuvent créer un lien vers notre site Web de la même manière qu'ils créent un lien hypertexte vers les sites Web d'autres entreprises répertoriées ; et",
+    "subparagraphe-11": " - Entreprises accréditées à l'échelle du système, à l'exception des organisations à but non lucratif, des centres commerciaux caritatifs et des groupes de collecte de fonds caritatifs qui ne peuvent pas créer de lien hypertexte vers notre site Web.",
+    "paragraphe-8": "Ces organisations peuvent créer des liens vers notre page d'accueil, vers des publications ou vers d'autres informations du site Web à condition que le lien : (a) ne soit en aucun cas trompeur ; (b) n'implique pas faussement un parrainage, une approbation ou une approbation de la partie qui établit le lien et de ses produits et/ou services ; et (c) s'inscrive dans le contexte du site de la partie qui établit le lien.",
+    "title-5": "Cadres",
+    "paragraphe-9": "Sans autorisation préalable et permission écrite, vous ne pouvez pas créer de cadres autour de nos pages Web qui modifient de quelque manière que ce soit la présentation visuelle ou l'apparence de notre site Web.",
+    "paragraphe-10": "Responsabilité du contenu",
+    "paragraphe-11": "Nous ne pouvons être tenus responsables du contenu qui apparaît sur votre site Web. Vous acceptez de nous protéger et de nous défendre contre toutes les réclamations qui pourraient survenir sur votre site Web. Aucun lien ne doit apparaître sur un site Web qui pourrait être interprété comme diffamatoire, obscène ou criminel, ou qui enfreint, viole ou préconise la violation ou toute autre violation des droits d'un tiers.",
+    "paragraphe-12": "Votre confidentialité",
+    "paragraphe-13": "Veuillez lire",
+    "paragraphe-14": "la politique de confidentialité",
+    "title-6": "Réserve de droits",
+    "paragraphe-15": "Nous nous réservons le droit de vous demander de supprimer tous les liens ou tout lien particulier vers notre site Web. Vous acceptez de supprimer immédiatement tous les liens vers notre site Web sur demande. Nous nous réservons également le droit de modifier ces termes et conditions et sa politique de liens à tout moment. En créant en permanence un lien vers notre site Web, vous acceptez d'être lié et de suivre ces termes et conditions de liens.",
+    "title-7": "Suppression des liens de notre site Web",
+    "paragraphe-16": "Si vous trouvez sur notre site Internet un lien offensant pour une raison quelconque, vous êtes libre de nous contacter et de nous en informer à tout moment. Nous étudierons les demandes de suppression de liens, mais nous ne sommes pas obligés de le faire ou de vous répondre directement.",
+    "paragraphe-17": "Nous ne garantissons pas que les informations sur ce site Web sont correctes, nous ne garantissons pas leur exhaustivité ou leur exactitude ; nous ne promettons pas non plus de garantir que le site Web reste disponible ou que le contenu du site Web est tenu  ",
+    "title-8": "Clause de non-responsabilité",
+    "paragraphe-18": "Dans la mesure maximale permise par la loi applicable, nous excluons toutes les représentations, garanties et conditions relatives à notre site Web et à l'utilisation de ce site Web. Rien dans cette clause de non-responsabilité de :",
+    "paragraphe-19": "- limiter ou exclure notre ou votre responsabilité en cas de décès ou de blessure corporelle ;",
+    "paragraphe-20": "- limiter ou exclure notre ou votre responsabilité en cas de fraude ou de fausse déclaration frauduleuse ;",
+    "paragraphe-21": " - limiter l'une de nos ou vos responsabilités d'une manière qui n'est pas autorisée par la loi applicable ; ou",
+    "paragraphe-22": "- exclure l'une quelconque de nos responsabilités ou des vôtres qui ne peuvent être exclues en vertu de la loi applicable.",
+    "paragraphe-23": "Les limitations et interdictions de responsabilité énoncées dans la présente section et ailleurs dans la présente clause de non-responsabilité :",
+    "paragraphe-24": "(a) sont soumises au paragraphe précédent",
+    "paragraphe-25": "; et",
+    "paragraphe-26": "(b) régissent toutes les responsabilités découlant de la clause de non-responsabilité, y compris les responsabilités contractuelles, délictuelles et pour manquement à une obligation légale.",
+    "paragraphe-27": "Tant que le site Web et les informations et services sur le site Web sont fournis gratuitement, nous ne serons pas responsables de toute perte ou dommage de quelque nature que ce soit."
+
+
+
+  }
 }
