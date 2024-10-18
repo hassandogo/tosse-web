@@ -4,7 +4,8 @@
     "subtitle": "You can purchase credit and packages regardless of the mobile network (Tigo, Airtel, Salam) via your preferred payment method (Tigo or Airtel) at no additional cost.",
     "link": "Bundles"
   },
-  "home-offline":{
+
+  "home-offline": {
     "title": "Buy credit offline",
     "subtitle": "Examples of messages:",
     "subtitle-1": "Send 500 to 9XXXXXXX",
@@ -13,6 +14,7 @@
     "contact": "Below are our contacts:",
     "cliquez": "Click on the numbers above to save them to your contacts"
   },
+
   "home-functioning": {
     "title": "How it works",
     "sous-title": "1. Initiate the transaction",
@@ -24,18 +26,69 @@
     "sous-6-title": "There are no extra or hidden fees!",
     "title-3": "3. Get credit",
     "sous-7-title": "That's it! Sit back, relax and receive your credit."
-
   },
-  "home-download":{
+
+  "home-download": {
     "title": "Download the TOSSE app now.",
     "subtitle": "You can make the purchase through our app."
   },
-  "home-availability":{
+
+  "home-availability": {
     "title": "Credit available"
   },
+
   "faqs": "faqsEn",
-  "home-condition":{
-      "title": "General Terms and Conditions",
-      "paragraph": "Welcome to TOSSE!"
+
+  "home-condition": {
+    "title": "General Terms and Conditions",
+    "paragraph": "Welcome to TOSSE!",
+    "paragraph-1": "These terms and conditions outline the rules and regulations for the use of Tosse Company Limited's website, located at https://www.”tosse”.net. By accessing this website we assume you accept these terms and conditions. Do not use TOSSE if you do not agree to take all of the terms and conditions stated on this page.",
+    "paragraph-2": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Us” and “Our” refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to the same.",
+    "title-1": "Cookies",
+    "paragraphe-3": "We use cookies. By accessing Tosse you agree to the use of cookies in accordance with the privacy policy of “Tosse” Company Limited. Most interactive websites use cookies to enable us to retrieve user details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people to visit our website. Some of our affiliate/advertising partners may also use cookies.",
+    "title-2": "License",
+    "paragraphe-4": "Unless otherwise stated, TOSSE Company Limited and/or its licensors own the intellectual property rights in all material on TOSSE. All intellectual property rights are reserved. You may access this material from TOSSE for your own personal use subjected to restrictions set in these terms and conditions.",
+    "subparagraphe": "You must not:",
+    "subparagraphe-3": "- Republish material from TOSSE",
+    "subparagraphe-4": "- Sell, rent or sublicense material from TOSSE",
+    "subparagraphe-5": "- Reproduce, duplicate or copy material from TOSSE",
+    "subparagraphe-6": "- Redistribute content from TOSSE",
+    "title-3": "This Agreement shall enter into force on the date hereof.",
+    "paragraphe-5": "Certain parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. TOSSE Company Limited does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of TOSSE Company Limited, its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, TOSSE Company Limited shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.",
+    "paragraphe-6": "TOSSE Company Limited reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.",
+    "title-4": "Hyperlinks to our content",
+    "paragraphe-7": "The following organizations may link to our Website without prior written approval:",
+    "subparagraphe-1": "You must not:",
+    "subparagraphe-7": "- Government agencies;",
+    "subparagraphe-8": "- Search engines;",
+    "subparagraphe-9": "- News organizations;",
+    "subparagraphe-10": "- Online directory distributors may link to our Web site in the same manner as they hyperlink to the Web sites of other listed businesses; and",
+    "subparagraphe-11": "- Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.",
+    "paragraphe-8": "These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.",
+    "title-5": "Frames",
+    "paragraphe-9": "Sans automation is available and with permission to write, you can't create screens on any of our Web pages that modify what makes it possible for the display to appear or the appearance of our Web site.",
+    "paragraphe-10": "Content Responsibility",
+    "paragraphe-11": "We do not have any responsibility for the content that appears on your website. You accept our protector and our defense against all the reclamations that are sent to your website. Also, do not click on a website that connects to it as it is different, obscene or criminal, or if it is clear, it appears or prevents the violation or tout other violations on the surface of the tiers.",
+    "paragraphe-12": "Your Privacy.",
+    "paragraphe-13": "Please read.",
+    "paragraphe-14": "the Privacy Policy.",
+    "title-6": "Reservation of rights",
+    "paragraphe-15": "We reserve the right to request that you remove all links or any particular link to our Website. You agree to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.",
+    "title-7": "Removal of links from our website.",
+    "paragraphe-16": "If you find any link on our website that is offensive for any reason, you are free to contact us and inform us at any time. We will consider requests to remove links, but we are not obliged to do so or to respond to you directly.",
+    "paragraphe-17": "We do not guarantee that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the content of the website is maintained.",
+    "title-8": "Disclaimer",
+    "paragraphe-18": "To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:",
+    "paragraphe-19": "- limit or exclude our or your liability for death or personal injury;",
+    "paragraphe-20": "- limit or exclude our or your liability for fraud or fraudulent misrepresentation;",
+    "paragraphe-21": "- limit any of our or your liabilities in any way that is not permitted under applicable law; or",
+    "paragraphe-22": "- exclude any of our or your liabilities that may not be excluded under applicable law.",
+    "paragraphe-23": "The limitations and prohibitions of liability set out in this Section and elsewhere in this disclaimer:",
+    "paragraphe-24": "(a) are subject to the preceding paragraph",
+    "paragraphe-25": "; And",
+    "paragraphe-26": "(b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.",
+    "paragraphe-27": "As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature."
+
+
   }
 }
