@@ -10,27 +10,27 @@ interface homeAvailabilityProps {
 export const HomeAvailability: FC<homeAvailabilityProps> = ({ dictionary }) => {
   
   return (
-    <div className="gap-2 bg-muted pt-5" id="availability">
+    <div className="gap-2 bg-primary-foreground pt-5" id="availability">
       <Spacer tooSmall />
       <div className="p-2">
-        <TypographyH4 className="text-6xl font-normal leading-[55px] text-center text-black mb-[2rem]">
+        <TypographyH4 className="text-2xl sm:text-4xl lg:text-6xl font-semibold leading-[55px] text-center text-black mb-[2rem]">
           {dictionary.title}
-          <div className="bg-primary h-1.5 w-[5rem] my-4 mx-auto"></div>
+          <div className="bg-primary h-1.5 w-[5rem] mx-auto my-4"></div>
         </TypographyH4>
       </div>
-      <Spacer small />
-      <div className="justify-center gap-5  grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-        <div className="flex flex-col gap-3 justify-center items-center pb-2">
-          <Image src="/logos/logo_moov_africa.png" alt="logo de l'opérateur Moove Africa" width={300} height={50} />
+      {/* <div className="w-full max-w-7xl mx-auto grid justify-center items-center xsm:grid-cols-2 lg:grid-cols-3 gap-5"> */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center xsm:items-start xsm:flex-row justify-center gap-5 sm:gap-16 p-4">
+        <div className="w-28 sm:w-64">
+          <Image src="/logos/logo_moov_africa.png" alt="logo de l'opérateur Moove Africa" width={300} height={300} className="shadow-xl" />
         </div>
-        <div className="flex flex-col gap-3 items-center">
-          <Image src="/logos/logo_airtel.jpg" alt="logo de l'opérateur Airtel" width={300} height={50} />
+        <div className="w-28 sm:w-64">
+          <Image src="/logos/logo_airtel.jpg" alt="logo de l'opérateur Airtel" width={300} height={300} className="shadow-xl" />
         </div>
-        <div className="flex flex-col gap-3 items-center">
-          <Image src="/logos/logo_salam-removebg.png" alt="logo de l'opérateur Salam" width={420} height={50} />
+        <div className="w-28 sm:w-64">
+          <Image src="/logos/logo_salam-removebg.png" alt="logo de l'opérateur Salam" width={300} height={300} className="shadow-xl" />
         </div>
       </div>
-      <Spacer />
+      <Spacer tooSmall />
     </div>
   );
 };

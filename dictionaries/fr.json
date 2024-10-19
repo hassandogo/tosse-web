@@ -16,21 +16,22 @@
   },
 
   "home-functioning": {
-    "title": "Comment ça fonctionne",
+    "title": "Comment ça fonctionne ?",
     "sous-title": "1. Initier la transaction",
     "sous-1-title": "Envoyez-nous par SMS les détails de votre transaction.",
     "sous-2-title": "Comment ça marche",
     "sous-3-title": "OU",
     "title-2": " 2. Terminer le paiement",
     "sous-5-title": "Un paiement sera initie une fois que vous faites une demande",
-    "sous-6-title": "Il n&apos;y a pas de frais supplémentaires ou cachés!",
+    "sous-6-title": "Il n'y a pas de frais supplémentaires ou cachés!",
     "title-3": "3. Recevez du crédit",
     "sous-7-title": "C'est tout! Asseyez-vous, détendez-vous et recevez votre crédit."
   },
 
   "home-download": {
-    "title": "Téléchargez l'application TOSSE maintenant",
-    "subtitle": "Vous pouvez effectuer l&apos;achat via notre application."
+    "title": "Téléchargez l'application",
+    "title_alt":"TOSSE maintenant",
+    "subtitle": "Vous pouvez effectuer l'achat via notre application."
   },
 
   "home-availability": {

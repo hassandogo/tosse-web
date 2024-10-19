@@ -31,27 +31,26 @@ export default async function Faqs({params: { lang }}:{
             <TypographyH1>
               {faqs.title}
             </TypographyH1>
-            <TypographyP className="text-[2.5rem] font-normal leading-[3rem]">
+            <TypographyP className="text-xl sm:text-3xl font-normal leading-6 sm:leading-9">
               {faqs.subtitle}
             </TypographyP>
           </div>
           {faqs.description &&
             faqs.description.length > 0 &&
             faqs.description.map((faq, index) => (
-              <div key={index} className="w-[80%] space-y-3 py-4">
-                <Spacer tooSmall />
+              <div key={index} className="w-[90%] sm:w-[80%] space-y-3 py-4">
                 <TypographyH3 className=" text-[2rem] text-primary text-center">
                   {faq.theme.title}
                 </TypographyH3>
                 <div className="">
-                  <Spacer small />
+                  <Spacer tooSmall />
                   <Accordion type="single" collapsible className="">
                     {faq.theme.content.map((quest, index) => (
                       <AccordionItem key={index} value={`item-${index}`}>
-                        <AccordionTrigger className="text-2xl font-normal leading-9 text-left">
+                        <AccordionTrigger className="text-xl sm:text-2xl font-normal leading-6 sm:leading-9 text-left">
                           {quest.question}
                         </AccordionTrigger>
-                        <AccordionContent className="text-[1rem] font-normal leading-[2rem] text-left ml-8">
+                        <AccordionContent className="text-[1rem] font-normal leading-6 sm:leading-[2rem] text-left ml-8">
                           {quest.anwser}
                         </AccordionContent>
                       </AccordionItem>
@@ -62,7 +61,7 @@ export default async function Faqs({params: { lang }}:{
             ))}
         </div>
         <Spacer tooSmall />
-        <TypographyP className="text-[1.5rem] font-normal leading-[2rem] text-center">
+        <TypographyP className="text-xl sm:text-3xl font-normal leading-6 sm:leading-9 text-center">
           {faqs.contactez}{" "}
           <Link href="/contact" className="text-primary">
             {faqs.link}

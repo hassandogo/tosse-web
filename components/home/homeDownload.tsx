@@ -12,38 +12,42 @@ const HomeDownload: FC<homeDownloadProps> = ({ dictionary }) => {
   return (
     <section className=" bg-muted">
       <Spacer small />
-      <div className="grid gap-3 grid-cols-1 md:grid-cols-2 mx-auto">
-        <div className="my-[4rem]">
+      <div className="overflow-x-hidden grid gap-3 grid-cols-1 md:gap-6 md:grid-cols-2 mx-auto">
+        <div className="my-[4rem] order-last md:order-none">
           <div>
-            <div className="ellipse  relative max-w-[42rem]">
+            <div className="ellipse w-full  relative max-w-[20rem] sm:max-w-[32rem] md:max-w-[42rem] ">
               <Image
                 width={500}
                 height={500}
                 alt="un client d'operateur"
                 src="/images/dowload_user.png"
-                className="w-[95%] h-full"
+                className="md:w-[95%] h-full"
               />
-              <div className="absolute top-0 right-0">
-                <Image src="/images/phone.png" alt="Phone" width={200} height={200} />
+              <div className="absolute -top-6 sm:-top-16 -right-8 sm:-right-8 md:-top-16 md:-right-4 lg:-top-20 h-28 w-24 sm:h-36  sm:w-36 md:h-40 md:w-40 lg:h-52 lg:w-52">
+                <Image src="/images/phone.png" alt="Phone" width={300} height={300} />
               </div>
             </div>
           </div>
         </div>
-        <div className="my-auto text-center">
-          <TypographyH4 className="w-full max-w-max text-3xl md:text-4xl lg:text-6xl font-normal leading-[3rem] md:leading-[5.625rem] md:text-left text-black">
-            {dictionary.title}
-          <div className="w-20 bg-primary h-3 mx-auto md:mx-0 mt-2"></div>
+        <div className="my-auto text-center md:text-left">
+          <TypographyH4 className="text-2xl sm:text-4xl lg:text-6xl font-semibold leading-[2rem] sm:leading-[3rem] text-black mb-[2rem]">
+            {dictionary.title} <br />
+            <span className="my-2 inline-block">
+            {dictionary.title_alt}
+            </span>
+            <div className="bg-primary h-1.5 w-[5rem] mx-auto md:mx-0 my-4"></div>
           </TypographyH4>
-          <TypographyP className="text-[1.375rem] font-normal leading-[2rem] md:leading-[1.65rem] md:text-left p-3">
+          <TypographyP className="mx-auto md:mx-0 max-w-[450px] text-lg md:text-xl font-normal leading-[2rem] text-black">
             {dictionary.subtitle}
           </TypographyP>
-          <div className="gap-4 md:gap-[1.875rem] px-2.5 flex flex-col md:flex-row p-4 items-center justify-center md:justify-start">
+          <div className="gap-6 md:gap-[1.875rem] px-2.5 flex md:flex-row p-4 items-center justify-center md:justify-start">
             <Link href="#/" target="_blank">
               <Image
                 src="/images/telecharger_play.png"
                 alt="télécharger l'application"
                 width={200}
                 height={200}
+                className="h-14 md:h-[4.5rem]  w-36 md:w-52 "
               />
             </Link>
             <Link href="#/" target="_blank">
@@ -52,6 +56,7 @@ const HomeDownload: FC<homeDownloadProps> = ({ dictionary }) => {
                 alt="télécharger l'application"
                 width={200}
                 height={200}
+                className="h-14 md:h-[4.5rem]  w-36 md:w-52 "
               />
             </Link>
           </div>

@@ -24,9 +24,12 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
       )}
     >
       <AppContainer className="flex justify-between items-center">
-        <Link href={"/"} className="text-center text-3xl font-semibold uppercase">
+      <TogglePhoneMenu />
+
+        <Link href={"/"} className=" text-3xl font-semibold uppercase">
           Tosse
         </Link>
+        
         <NavBar />
         <Button
           variant={"link"}
@@ -42,9 +45,8 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
           className="hidden sm:inline-block lg:hidden text-primary hover:no-underline"
         >
           <DownloadIcon className="h-8 w-8 inline-block" />
-          &nbsp;<span>L&apos;application</span>
         </Button>
-        <TogglePhoneMenu />
+
       </AppContainer>
     </header>
   );

@@ -18,11 +18,11 @@ export const HomeBanner: FC<homeBannerProps> = ({ dictionary }) => {
       <Header transparentBg />
       <AppContainer className="pb-20">
         <Spacer />
-        <TypographyH1 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
+        <TypographyH1 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground font-semibold">
           {dictionary.title}
         </TypographyH1>
         <Spacer tooSmall />
-        <TypographyH4 className="mx-auto xl:mx-0 max-w-3xl text-primary-foreground">
+        <TypographyH4 className="text-lg mx-auto xl:mx-0 max-w-3xl text-primary-foreground font-semibold">
           {dictionary.subtitle}
         </TypographyH4>
         <Spacer small />
@@ -31,7 +31,7 @@ export const HomeBanner: FC<homeBannerProps> = ({ dictionary }) => {
           <Link href="/forfaits">
             <Button
               variant={"link"}
-              className="drop-shadow-sm text-primary-foreground md:text-xl"
+              className="drop-shadow-sm text-primary-foreground text-base md:text-xl"
             >
               {dictionary.link}
             </Button>

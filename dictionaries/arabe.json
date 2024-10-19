@@ -16,7 +16,7 @@
   },
 
   "home-functioning": {
-    "title": "كيف يعمل",
+    "title": "كيف يعمل ?",
     "sous-title": "1. ابدأ المعاملة",
     "sous-1-title": ".أرسل لنا تفاصيل معاملتك",
     "sous-2-title": "كيف يعمل",
@@ -30,6 +30,7 @@
 
   "home-download": {
     "title": "قم بتحميل تطبيق توس الآن.",
+    "title_alt":"TOSSE app now.",
     "subtitle": "يمكنك إجراء عملية الشراء من خلال التطبيق لدينا."
   },
 

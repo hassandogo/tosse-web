@@ -16,7 +16,7 @@
   },
 
   "home-functioning": {
-    "title": "How it works",
+    "title": "How it works ?",
     "sous-title": "1. Initiate the transaction",
     "sous-1-title": "Text us your transaction details.",
     "sous-2-title": "How it works",
@@ -29,7 +29,8 @@
   },
 
   "home-download": {
-    "title": "Download the TOSSE app now.",
+    "title": "Download the",
+    "title_alt":"TOSSE app now.",
     "subtitle": "You can make the purchase through our app."
   },
 

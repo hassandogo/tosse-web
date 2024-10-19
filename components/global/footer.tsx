@@ -17,9 +17,9 @@ const Footer = () => {
 
   return (
     <section className="bg-[#303030] py-[2rem]">
-      <AppContainer className="text-center lg:text-left">
+      <AppContainer className="lg:text-left">
         <Spacer small />
-        <div className="grid justify-center md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
           {footerNavigationList}
         </div>
         <Separator className="bg-gray-400 my-5 space-y-5" />

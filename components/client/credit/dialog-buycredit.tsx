@@ -14,7 +14,7 @@ export const DialogBuyCredit: FC<BuyCreditProps> = ({ className }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className={clsx("drop-shadow-sm", className)}>
+        <Button className={clsx("drop-shadow-sm  text-base", className)}>
           Acheter du crédit
         </Button>
       </DialogTrigger>
