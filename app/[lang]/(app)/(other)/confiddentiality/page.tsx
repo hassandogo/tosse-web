@@ -1,10 +1,20 @@
 import { AppContainer } from "@/components/global/appContainer";
 import { Spacer } from "@/components/global/spacer";
 import { TypographyH1, TypographyP } from "@/components/ui/typographies";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
 import Link from "next/link";
 
 
-const Confidentiality = () => {
+export default async function Confidentiality({ params: { lang }}: {
+  params: { lang: Locale }
+
+}) {
+  const dictionary = await getDictionary(lang)
+  if (!dictionary) {
+    <div>Loading</div>
+  }
+  const condition = dictionary["home-confidentiality"]
   return (
     <section>
       <Spacer small />
@@ -48,15 +58,15 @@ const Confidentiality = () => {
             paiement tiers. Nous collectons et utilisons également des
             informations sur vos interactions avec le Service d&apos;une manière
             et dans un format qui ne permettent pas de vous identifier en tant
-            qu&apos;individu (« Informations non personnellement
-            identifiables »). Nous pouvons collecter, utiliser et divulguer les
+            qu&apos;individu («Informations non personnellement
+            identifiables»). Nous pouvons collecter, utiliser et divulguer les
             types de données suivants
           </TypographyP>
         </div>
         <Spacer tooSmall />
         <div className="space-4">
           <TypographyH1 className="font-bold">
-            Informations analytiques :
+            Informations analytiques:
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyP>
@@ -76,13 +86,13 @@ const Confidentiality = () => {
         <Spacer tooSmall />
         <div className="space-4">
           <TypographyH1 className="font-bold">
-            Informations sur les cookies :
+            Informations sur les cookies:
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyP>
             Lorsque vous visitez le Service, nous pouvons envoyer un ou
-            plusieurs cookies – un petit fichier texte contenant une chaîne de
-            caractères alphanumériques – à votre ordinateur qui identifie de
+            plusieurs cookies  un petit fichier texte contenant une chaîne de
+            caractères alphanumériques à votre ordinateur qui identifie de
             manière unique votre navigateur. Cela permet à Switchn de vous aider
             à vous connecter plus rapidement et d&apos;améliorer votre
             navigation sur le site. Un cookie peut également nous transmettre
@@ -107,7 +117,7 @@ const Confidentiality = () => {
         <Spacer tooSmall />
         <div className="space-4">
           <TypographyH1 className="font-bold">
-            Effacer les informations sur les gifs/balises Web :
+            Effacer les informations sur les gifs/balises Web:
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyP>
@@ -117,8 +127,8 @@ const Confidentiality = () => {
             utilisateurs. En outre, nous pouvons également utiliser des gifs
             clairs dans les e-mails HTML envoyés à nos utilisateurs pour suivre
             quels e-mails sont ouverts et sur quels liens les destinataires
-            cliquent. Les informations permettent d’établir des rapports plus
-            précis et d’améliorer le Service.
+            cliquent. Les informations permettent d&apos;établir des rapports plus
+            précis et d&apos;améliorer le Service.
           </TypographyP>
         </div>
         <Spacer tooSmall />
@@ -128,7 +138,7 @@ const Confidentiality = () => {
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyH1 className="font-bold">
-            Informations personnellement identifiables :
+            Informations personnellement identifiables:
           </TypographyH1>
           <Spacer tooSmall />
           <TypographyP>
@@ -246,9 +256,9 @@ const Confidentiality = () => {
             la divulgation d&apos;informations vous concernant, y compris des
             informations personnelles identifiables, comme décrit dans cette
             politique de confidentialité. Enfants, Tosse ne collecte ni ne
-            sollicite sciemment d’informations personnelles identifiables auprès
+            sollicite sciemment d&apos;informations personnelles identifiables auprès
             de toute personne de moins de 18 ans et ne permet pas sciemment à
-            ces personnes de s’inscrire en tant qu’utilisateurs. Le Service et
+            ces personnes de s&apos;inscrire en tant qu&apos;utilisateurs. Le Service et
             son contenu ne sont pas destinés aux enfants de moins de 18 ans. Si
             vous avez moins de 18 ans, veuillez ne nous envoyer aucune
             information vous concernant, y compris votre nom, votre adresse,
@@ -321,4 +331,4 @@ const Confidentiality = () => {
   );
 };
 
-export default Confidentiality;
+

@@ -1,6 +1,6 @@
 {
   "home-banner": {
-    "title": "Acheter du crédit et des forfaits sans frais, quel que soit le réseau mobile",
+    "title": "Acheter du crédit et des forfaits sans frais, quel que soit le réseau mobile.",
     "subtitle": "Vous pouvez acheter du crédit et des forfaits quel que soit le réseau mobile (Tigo, Airtel, Salam) via votre mode de paiement préféré (Tigo ou Airtel) sans frais supplémentaire.",
     "link": "Forfaits"
   },
@@ -92,5 +92,9 @@
 
 
 
+  },
+
+  "home-confidentiality": {
+    "title": "Politique de confidentialité des données Tosse"
   }
 }

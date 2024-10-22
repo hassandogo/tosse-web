@@ -27,7 +27,7 @@ const Header: FC<HeaderProps> = ({ transparentBg = false }) => {
       <TogglePhoneMenu />
 
         <Link href={"/"} className=" text-3xl font-semibold uppercase">
-          Tosse
+          Tossé
         </Link>
         
         <NavBar />

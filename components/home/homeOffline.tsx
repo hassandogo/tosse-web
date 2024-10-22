@@ -20,7 +20,7 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
        <span className="not-italic text-lg font-normal">{dictionary.subtitle}</span>  <br /> {dictionary["subtitle-1"]}
         <br /> {dictionary["subtitle-2"]}
       </TypographyP>
-      <TypographyP className="w-[100%] text-base font-normal leading-[1.8rem] text-center">
+      <TypographyP className="w-[100%] text-base font-normal leading-[1.8rem] text-center text-gray-400">
        {dictionary["subtitle-3"]}
       </TypographyP>
       <TypographyP className="mt-5 text-lg font-normal leading-[1.8rem] text-center">
@@ -32,7 +32,7 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
             <Download />
             <TypographyP>
               Moov Africa:
-              <span className="text-[#396BB4]"> +235 99161030</span>
+              <span className="text-gray-400 hover:text-blue-600"> 99161030</span>
             </TypographyP>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
           <Link href="#/" target="_blank" className="flex items-center gap-2">
             <Download />
             <TypographyP>
-              Airtel: <span className="text-destructive"> +235 66462428</span>
+              Airtel: <span className="text-gray-400 hover:text-red-600"> 66462428</span>
             </TypographyP>
           </Link>
         </div>
