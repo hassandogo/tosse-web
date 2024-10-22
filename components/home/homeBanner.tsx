@@ -31,7 +31,7 @@ export const HomeBanner: FC<homeBannerProps> = ({ dictionary }) => {
           <Link href="/forfaits">
             <Button
               variant={"link"}
-              className="drop-shadow-sm text-primary-foreground text-lg md:text-xl border"
+              className="drop-shadow-sm text-primary-foreground text-lg md:text-xl border-primary border hover:bg-primary"
             >
               {dictionary.link}
             </Button>

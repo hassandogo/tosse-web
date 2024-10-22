@@ -32,7 +32,7 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
             <Download />
             <TypographyP>
               Moov Africa:
-              <span className="text-gray-400 hover:text-blue-600"> 99161030</span>
+              <span className="text-gray-400 hover:text-blue-600 border-b border-blue-600"> 99161030</span>
             </TypographyP>
           </Link>
         </div>
@@ -40,12 +40,12 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
           <Link href="#/" target="_blank" className="flex items-center gap-2">
             <Download />
             <TypographyP>
-              Airtel: <span className="text-gray-400 hover:text-red-600"> 66462428</span>
+              Airtel: <span className="text-gray-400 hover:text-red-600 border-b border-red-600"> 66462428</span>
             </TypographyP>
           </Link>
         </div>
       </div>
-      <TypographyP className="text-base sm:text-xl font-normal leading-6 text-center text-primary flex justify-center sm:gap-3">
+      <TypographyP className="text-base sm:text-[0.5rem] font-normal leading-6 text-center text-primary flex justify-center sm:gap-3">
         <Save className=" border-primary w-8 h-8 mr-1" />
         {dictionary.cliquez}
       </TypographyP>
