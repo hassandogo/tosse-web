@@ -18,7 +18,6 @@ export const HomeAvailability: FC<homeAvailabilityProps> = ({ dictionary }) => {
           <div className="bg-primary h-1.5 w-[5rem] mx-auto my-4"></div>
         </TypographyH4>
       </div>
-      {/* <div className="w-full max-w-7xl mx-auto grid justify-center items-center xsm:grid-cols-2 lg:grid-cols-3 gap-5"> */}
       <div className="w-full max-w-7xl mx-auto flex flex-col items-center xsm:items-start xsm:flex-row justify-center gap-5 sm:gap-16 p-4">
         <div className="w-28 sm:w-64">
           <Image src="/logos/logo_moov_africa.png" alt="logo de l'opérateur Moove Africa" width={300} height={300} className="shadow-xl" />

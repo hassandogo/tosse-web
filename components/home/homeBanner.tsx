@@ -22,7 +22,7 @@ export const HomeBanner: FC<homeBannerProps> = ({ dictionary }) => {
           {dictionary.title}
         </TypographyH1>
         <Spacer tooSmall />
-        <TypographyH4 className="text-lg mx-auto xl:mx-0 max-w-3xl text-primary-foreground font-semibold">
+        <TypographyH4 className="text-md lg:text-lg mx-auto xl:mx-0 max-w-3xl text-gray-300 lg:text-primary-foreground font-semibold">
           {dictionary.subtitle}
         </TypographyH4>
         <Spacer small />
@@ -31,7 +31,7 @@ export const HomeBanner: FC<homeBannerProps> = ({ dictionary }) => {
           <Link href="/forfaits">
             <Button
               variant={"link"}
-              className="drop-shadow-sm text-primary-foreground text-base md:text-xl"
+              className="drop-shadow-sm text-primary-foreground text-lg md:text-xl border"
             >
               {dictionary.link}
             </Button>

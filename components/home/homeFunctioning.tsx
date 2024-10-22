@@ -26,7 +26,7 @@ const HomeFunctioning: FC<HomeFunctioningProps> = ({dictionary}) => {
           <TypographyH4 className="text-2xl font-medium leading-[3rem] text-center text-black">
             {dictionary["sous-title"]}
           </TypographyH4>
-          <TypographyP className="max-w-[450px] text-lg font-normal leading-[2rem] text-center text-black">
+          <TypographyP className="max-w-[450px] text-lg font-normal leading-[2rem] text-center text-gray-400">
             {dictionary["sous-1-title"]}
           </TypographyP>
           <Link
@@ -46,10 +46,10 @@ const HomeFunctioning: FC<HomeFunctioningProps> = ({dictionary}) => {
           <TypographyH4 className="text-2xl font-medium text-center text-black leading-[3rem]">
            {dictionary["title-2"]}
           </TypographyH4>
-          <TypographyP className="max-w-[450px] text-lg font-normal text-center leading-[2rem] text-[#000000]">
+          <TypographyP className="max-w-[450px] text-lg font-normal text-center leading-[2rem] text-gray-400">
             {dictionary["sous-5-title"]}
           </TypographyP>
-          <TypographyP className="text-[#000000] text-lg text-center">
+          <TypographyP className="text-gray-400 text-lg text-center">
             {dictionary["sous-6-title"]}
           </TypographyP>
 
@@ -59,7 +59,7 @@ const HomeFunctioning: FC<HomeFunctioningProps> = ({dictionary}) => {
           <TypographyH4 className="text-2xl font-medium text-center text-black leading-[2rem]">
             {dictionary["title-3"]}
           </TypographyH4>
-          <TypographyP className="max-w-[450px] text-lg font-normal text-center leading-[2rem] text-[#000000]">
+          <TypographyP className="max-w-[450px] text-lg font-normal text-center leading-[2rem] text-gray-400">
             {dictionary["sous-7-title"]}
           </TypographyP>
 
