@@ -59,7 +59,6 @@ export default function LocaleSwitcher() {
                     value={locale}
                     className="cursor-pointer"
                     onSelect={() => {
-                      // You can add any additional logic here if needed
                     }}
                   >
                     <Check
