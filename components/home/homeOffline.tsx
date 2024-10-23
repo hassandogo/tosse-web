@@ -45,7 +45,7 @@ export const HomeOffline: FC<homeOfflineProps> = ({ dictionary }) => {
           </Link>
         </div>
       </div>
-      <TypographyP className="text-base sm:text-[0.5rem] font-normal leading-6 text-center text-primary flex justify-center sm:gap-3">
+      <TypographyP className="text-[0.5rem] lg:text-base  font-normal leading-6 text-center text-primary flex justify-center sm:gap-3">
         <Save className=" border-primary w-8 h-8 mr-1" />
         {dictionary.cliquez}
       </TypographyP>
