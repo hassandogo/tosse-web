@@ -24,7 +24,9 @@ const Footer = () => {
         </div>
         <Separator className="bg-gray-400 my-5 space-y-5" />
         <TypographyP className="text-gray-500 text-center">
-          {`Copyright © ${currentYear} TOSSE Allrightsreserved.`}
+          {`Copyright © ${currentYear} `}{" "}
+          <a href="/" target="_blank" className="underline uppercase hover:text-primary">tossé</a>{" "}
+          {`Allrightsreserved.`}
         </TypographyP>
       </AppContainer>
     </section>
@@ -37,7 +39,7 @@ export default Footer;
 
 const FooterLink = ({ data }: footerLinkProps) => {
   const linkList = data.links.map((link) => (
-    <div key={uuidv4()} className="flex items-center space-x-2">
+    <div key={uuidv4()} className="flex items-center space-x-2  hover:text-primary">
       {link.icon && <span>{link.icon}</span>}
       {link.type === LinkTypes.INTERNAL && (
         <ActiveLink key={uuidv4()} href={link.baseUrl}>
