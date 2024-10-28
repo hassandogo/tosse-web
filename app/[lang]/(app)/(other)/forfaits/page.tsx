@@ -15,10 +15,10 @@ import * as React from "react";
 import { Search, Smile } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { useServerAction } from "zsa-react";
 import { getBundlesAction } from "@/actions/client.actions";
 import { BundleDuration, BundleModel } from "@/helpers/models/bundle.model";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useServerActionQuery } from "@/hooks/use-server-actions";
 
 const Bundles = () => {
   const operators = ["tout", "tigo", "airtel", "salam"];
@@ -30,34 +30,23 @@ const Bundles = () => {
     BundleDuration.MONTH,
   ];
   const [selectedPeriod, setSelectedPeroid] = React.useState(periods[0]);
-  const { isPending, data = [] } = useServerAction(getBundlesAction);
-  const [bundles, setBundles] = React.useState<BundleModel[]>(data);
 
-  React.useEffect(() => {
-    if (!isPending) {
-      setBundles(data);
-    }
-  }, [isPending, data]);
+  const { data = [], isPending  } = useServerActionQuery(getBundlesAction, {
+    queryKey: ['get-bunbles'],
+    input: {limit: undefined},
+  });
+  const [searchInput, setSearchInput] = React.useState("");
 
-  function handleInputSearch(value: string) {
-    if (value.length >= 2) {
-      const filteredBundles = data.filter((bundle) =>
-        bundle.name.toLowerCase().includes(value.toLowerCase())
-      );
-      setBundles(filteredBundles);
-    } else if (value.length === 0) {
-      setBundles(data);
-    }
+  const getFilteredBundles = () => {
+    return data.filter((bundle) => {
+      const operatorMatch = selectedOperator === "tout" || bundle.operator === selectedOperator
+      const periodMatch = selectedPeriod === "tout" || bundle.duration === selectedPeriod
+      const searchMatch = bundle.name.toLowerCase().includes(searchInput.toLowerCase())
+      return operatorMatch && periodMatch && searchMatch
+    })
   }
 
-
-  const filteredBundles = bundles.filter((bundle) => {
-    const operatorMatch =
-      selectedOperator === "tout" || bundle.operator === selectedOperator;
-    const periodMatch =
-      selectedPeriod === "tout" || bundle.duration === selectedPeriod;
-    return operatorMatch && periodMatch;
-  });
+  const filteredBundles = getFilteredBundles()
 
   return (
     <section>
@@ -67,7 +56,7 @@ const Bundles = () => {
           Forfaits
           <div className="bg-primary h-1.5 w-[5rem] my-4"></div>
         </TypographyH1>
-        <div className="flex flex-col md:flex-row gap-3 my-4">
+        <div className="flex flex-col-reverse md:flex-row gap-3 my-4">
           <div className="flex flex-wrap gap-2">
             {operators.map((operator) => (
               <Button
@@ -83,13 +72,13 @@ const Bundles = () => {
               </Button>
             ))}
           </div>
-          <div className="relative ml-auto flex-1 md:grow-0 inline-block">
+          <div className="relative md:ml-auto flex-1 md:grow-0 inline-block">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
               type="search"
               placeholder="Recherche..."
               className="w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[336px]"
-              onChange={(event) => handleInputSearch(event.target.value)}
+              onChange={(event) => setSearchInput(event.target.value)}
             />
           </div>
         </div>

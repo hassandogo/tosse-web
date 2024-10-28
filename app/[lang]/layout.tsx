@@ -4,6 +4,7 @@ import "../globals.css";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
 import { i18n, Locale } from "@/i18n-config";
+import { Providers } from "@/components/providers/app.provider";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -25,14 +26,17 @@ export default function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: {lang: Locale};
+  params: { lang: Locale };
 }) {
   return (
     <html lang={params.lang}>
       <body
-        className={cn("min-h-screen font-sans antialiased scroll-smooth", sansita.variable)}
+        className={cn(
+          "min-h-screen font-sans antialiased scroll-smooth",
+          sansita.variable
+        )}
       >
-        {children}
+        <Providers>{children}</Providers>
         <Toaster />
       </body>
     </html>
