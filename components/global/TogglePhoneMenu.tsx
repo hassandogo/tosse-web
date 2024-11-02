@@ -2,11 +2,19 @@
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { MenuIcon, XIcon } from 'lucide-react';
+import { MenuIcon } from 'lucide-react';
 import Link from 'next/link';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import LocaleSwitcher from './locale-switcher';
 import { DialogBuyCredit } from '../client/credit/dialog-buycredit';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 type NavbarProps = {
 	className?: string
 }
@@ -35,41 +43,30 @@ export const NavBar = ({className }: NavbarProps) => {
   };
 
 export const TogglePhoneMenu: FC = () => {
-	const [show, setShow] = useState<boolean>(false);
-	
-	const toggleShow = () => setShow((s) => !s);
-
 	return (
-		<>
+		<div className='lg:hidden'>
+        <Sheet>
+          <SheetTrigger asChild>
 			<Button
-				onClick={toggleShow}
 				size={'icon'}
 				variant={'ghost'}
 				className={cn('lg:hidden bg-transparent', 'hover:bg-transparent hover:text-primary')}
 			>
 				<MenuIcon className='size-8' />
 			</Button>
-			{show && (
-				<div className='fixed top-0 left-0 right-0 shadow-lg z-50 bg-card text-secondary-foreground'>
-					<div className='flex justify-between items-center px-5 py-3'>
-						<Link href={'/'}>
-							TOSSE
-						</Link>
-						<Button
-							onClick={toggleShow}
-							size={'icon'}
-							className={cn(
-								'lg:hidden bg-transparent text-muted-foreground',
-								'hover:bg-transparent hover:text-primary'
-							)}
-						>
-							<XIcon className='size-6' />
-						</Button>
-					</div>
-					<NavBar className="grid grid-cols-1 gap-4 z-10 p-4" />
-				</div>
-			)}
-		</>
+          </SheetTrigger>
+          <SheetContent side={'left'}>
+            <SheetHeader>
+              <SheetTitle><Link href={'/'}>TOSSE</Link></SheetTitle>
+            </SheetHeader>
+			<NavBar className="grid grid-cols-1 gap-4 py-4" />
+          </SheetContent>
+        </Sheet>
+		</div>
 	);
 };
+
+
+
+
 
