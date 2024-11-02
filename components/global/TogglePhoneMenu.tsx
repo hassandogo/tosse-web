@@ -27,6 +27,7 @@ export const NavBar = ({className }: NavbarProps) => {
 	];
 	return (
 	  <nav className={cn("lg:col-start-2 lg:col-span-5 hidden lg:flex gap-4 lg:gap-6 lg:justify-end lg:items-center", className)}>
+		<DialogBuyCredit className='max-w-44 lg:max-w-full h-12 lg:h-auto text-lg lg:text-sm' />
 		{tabs.map((tab) => (
 		  <Link
 			href={tab.href}
@@ -37,7 +38,6 @@ export const NavBar = ({className }: NavbarProps) => {
 		  </Link>
 		))}
 		<LocaleSwitcher />
-		<DialogBuyCredit />
 	  </nav>
 	);
   };
