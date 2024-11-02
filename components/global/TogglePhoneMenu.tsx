@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { MenuIcon } from 'lucide-react';
 import Link from 'next/link';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import LocaleSwitcher from './locale-switcher';
 import { DialogBuyCredit } from '../client/credit/dialog-buycredit';
 import {

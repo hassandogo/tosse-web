@@ -49,7 +49,7 @@ export default function LocaleSwitcher() {
       </PopoverTrigger>
       <PopoverContent className="w-32 p-0">
         <Command>
-          <CommandInput placeholder="Search language..." />
+          {/* <CommandInput placeholder="Search language..." /> */}
           <CommandList>
             <CommandEmpty>No language found.</CommandEmpty>
             <CommandGroup>
