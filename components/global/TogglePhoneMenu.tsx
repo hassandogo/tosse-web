@@ -57,7 +57,7 @@ export const TogglePhoneMenu: FC = () => {
           </SheetTrigger>
           <SheetContent side={'left'}>
             <SheetHeader>
-              <SheetTitle><Link href={'/'}>TOSSE</Link></SheetTitle>
+              <SheetTitle><Link href={'/'} className="uppercase">Tossé</Link></SheetTitle>
             </SheetHeader>
 			<NavBar className="grid grid-cols-1 gap-4 py-4" />
           </SheetContent>
