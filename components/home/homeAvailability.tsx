@@ -26,7 +26,7 @@ export const HomeAvailability: FC<homeAvailabilityProps> = ({ dictionary }) => {
           <Image src="/logos/logo_airtel.jpg" alt="logo de l'opérateur Airtel" width={300} height={300} className="shadow-xl" />
         </div>
         <div className="w-28 sm:w-64">
-          <Image src="/logos/logo_salam-removebg.png" alt="logo de l'opérateur Salam" width={300} height={300} className="shadow-xl" />
+          <Image src="/logos/logo_salam_2.png" alt="logo de l'opérateur Salam" width={300} height={300} className="shadow-xl" />
         </div>
       </div>
       <Spacer tooSmall />

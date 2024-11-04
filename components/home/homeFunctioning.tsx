@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { CreditCard, MessageSquare, Smile } from "lucide-react";
 import { Spacer } from "../global/spacer";
 import { TypographyH4, TypographyP } from "../ui/typographies";
