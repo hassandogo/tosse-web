@@ -2,15 +2,10 @@ import { BundleDuration, BundleModel } from "@/helpers/models/bundle.model";
 import { z } from "zod";
 import { createServerAction } from "zsa";
 
-/**
- * This is a simple action that returns the list of bundles.
- */
-
 export const getBundlesAction = createServerAction()
   .input(z.object({ limit: z.optional(z.number()) }))
   .handler<Promise<BundleModel[]>>(async ({ input }) => {
-    // TODO implement the action
-    // wait 5 seconds
+
     await new Promise((resolve) => setTimeout(resolve, 5000));
     return [
           {
