@@ -154,7 +154,7 @@ function Bundle(bundle: BundleModel) {
         />
       </div>
       <TypographyP>{bundle.description}</TypographyP>
-      <div className="flex justify-between gap-3 items-center">
+      <div className="flex justify-between gap-3 items-center space-y-4">
         <TypographyH4>{bundle.price}</TypographyH4>
         <TypographyH4>{bundle.duration}</TypographyH4>
       </div>
